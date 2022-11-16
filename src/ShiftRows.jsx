@@ -6,6 +6,7 @@ import Table2 from './Table2';
 import Table3 from './Table3';
 import Table4 from './Table4';
 import Table5 from './Table5';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 function ShiftRows() {
   const [flag, setflag]=useState(0)
@@ -34,7 +35,16 @@ function ShiftRows() {
       {(flag>=7 && flag<9) && <div style={{padding:"2%"}} >
       <Table4 name={sb}/>
       </div>}
-      {(flag>=9) && <div style={{padding:"2%"}} >
+      {(flag>=9 && flag<11) && <div style={{padding:"2%"}} >
+      <Table5 name={sb}/>
+      </div>}
+      {(flag>=11) && <div style={{padding:"2%"}} >
+      <Table name={sb}/>
+      <br/>
+      <br/>
+      <ArrowDownwardIcon sx={{fontSize:"80px", marginLeft :"15%"}}/>
+      <br/>
+      <br/>
       <Table5 name={sb}/>
       </div>}
     </div>

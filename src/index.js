@@ -10,6 +10,7 @@ import Input from './Input';
 import Home from './Home'
 import SB from './SB';
 import ShiftRows from './ShiftRows';
+import MixCol from './MixCol';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,7 +21,8 @@ root.render(
 				<Route exact path="/input" element={<Input />} />
 				<Route exact path="/keyexpansion/:data" element={<KeyExpansion />} />	
         <Route exact path="/sb" element={<SB />} />
-        <Route exact path="/shiftrows" element={<ShiftRows />} />		
+        <Route exact path="/shiftrows" element={<ShiftRows />} />
+        <Route exact path="/mixcol" element={<MixCol />} />		
 
 			</Routes>
   </React.StrictMode>

@@ -4,8 +4,6 @@ import * as React from 'react';
 function Table(prop) {
     const arr=prop.name 
   return (
-
-    <div className="App">
       <table>
         
         <tr>
@@ -34,7 +32,7 @@ function Table(prop) {
         </tr>     
         
       </table>
-    </div>
+    
   );
 }
 

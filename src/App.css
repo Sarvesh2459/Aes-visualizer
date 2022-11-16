@@ -155,17 +155,18 @@
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 40%;
+  width: 80%;
 }
 
 td {
   border: 1px solid #dddddd;
   text-align: left;
-  padding: 10px;
+  padding: 1px;
 }
 th {
   text-align: left;
-  padding: 10px;
+  font-size: large;
+  padding: 30px;
 }
 
 tr:nth-child(even) {
@@ -229,4 +230,13 @@ tr:nth-child(even) {
   user-select: none;
   -webkit-user-select: none;
   vertical-align: middle;
+}
+
+
+.col-show {
+  opacity: 1;
+  color: #EB1D36;
+}
+.col-hide {
+  opacity: 0;
 }

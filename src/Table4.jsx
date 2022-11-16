@@ -19,11 +19,11 @@ function Table4(prop) {
         <tr>
           <th></th>
           <th></th>
-          <th style={{color:"#EB1D36"}}></th>
+          <th ></th>
           <th>{arr[10]}{arr[11]}</th>
           <th>{arr[12]}{arr[13]}</th>
           <th>{arr[14]}{arr[15]}</th>
-          <th > {arr[8]}{arr[9]}</th>
+          <th style={{color:"#EB1D36"}} > {arr[8]}{arr[9]}</th>
         </tr>
         <tr>
           <th></th>
