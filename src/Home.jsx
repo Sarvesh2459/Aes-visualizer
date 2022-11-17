@@ -73,9 +73,11 @@ export default function Home() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
+        <Link to={'/mixcol'} style={{ textDecoration: 'none' }}>
         <button style={{backgroundColor:"#CFD2CF", color:"black"}} className={(round1>=8 && round1<44 && round1%4==2) ?'button-glow':'button-18'} role="button" >
         MixColumns
-        </button></TimelineContent>
+        </button>
+        </Link></TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
