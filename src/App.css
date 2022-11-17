@@ -140,10 +140,12 @@
   50% {
     background-color: #49e819;
     box-shadow: 0 0 20px #49e819;
+    
   }
   100% {
     background-color: #2ba805;
     box-shadow: 0 0 5px #2ba805;
+    
   }
 }
 .button-glow {
@@ -240,3 +242,31 @@ tr:nth-child(even) {
 .col-hide {
   opacity: 0;
 }
+
+
+.table-glow{
+  color: black;
+  background-color: #EFBBCF;
+  font-weight: 900;
+  z-index: 2;
+}
+
+/* @keyframes table_glow {
+  0% {background-color: #EFBBCF;
+    
+    font-weight: 900;
+  }
+  50% {
+    
+    
+  }
+  100% {
+    background-color: #EFBBCF;
+    box-shadow: 0 0 5px #EFBBCF;
+    font-weight: 900;
+    
+  }
+}
+.table-glow {
+  animation: table_glow 1300ms infinite;
+} */

@@ -18,7 +18,7 @@ function Table6(prop) {
 
       <table>
         
-        {flag>=1 && flag<=32 ?<tr style={{color:"#EB1D36"}}>
+        {flag>=1 && flag<=32 ?<tr className='table-glow'>
           <th>{arr[0]}{arr[1]}</th>
           <th>{arr[2]}{arr[3]}</th>
           <th>{arr[4]}{arr[5]}</th>
@@ -31,7 +31,7 @@ function Table6(prop) {
           <th>{arr[6]}{arr[7]}</th>
         </tr>}
         
-        {flag>=33 && flag<=40 ?<tr style={{color:"#EB1D36"}}>
+        {flag>=33 && flag<=40 ?<tr  className='table-glow'>
           <th>{arr[8]}{arr[9]}</th>
           <th>{arr[10]}{arr[11]}</th>
           <th>{arr[12]}{arr[13]}</th>
@@ -45,7 +45,7 @@ function Table6(prop) {
           <th>{arr[14]}{arr[15]}</th>
         </tr>}
 
-        {flag>=41 && flag<=48 ?<tr style={{color:"#EB1D36"}}>
+        {flag>=41 && flag<=48 ?<tr  className='table-glow'>
         <th>{arr[16]}{arr[17]}</th>
           <th>{arr[18]}{arr[19]}</th>
           <th>{arr[20]}{arr[21]}</th>
@@ -59,7 +59,7 @@ function Table6(prop) {
         </tr>}
 
 
-        {flag>=49 && flag<=56 ?<tr style={{color:"#EB1D36"}}>
+        {flag>=49 && flag<=56 ?<tr  className='table-glow'>
         <th>{arr[24]}{arr[25]}</th>
           <th>{arr[26]}{arr[27]}</th>
           <th>{arr[28]}{arr[29]}</th>
