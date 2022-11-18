@@ -162,7 +162,7 @@ table {
 th {
   text-align: left;
   font-size: large;
-  padding: 6px;
+  padding: 2px;
 }
 
 tr:nth-child(even) {
