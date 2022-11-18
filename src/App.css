@@ -157,18 +157,12 @@
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 80%;
-}
-
-td {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 1px;
+  width: 10%;
 }
 th {
   text-align: left;
   font-size: large;
-  padding: 30px;
+  padding: 6px;
 }
 
 tr:nth-child(even) {
