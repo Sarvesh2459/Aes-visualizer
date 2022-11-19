@@ -1,4 +1,4 @@
-import './App.css';
+import './table1.css';
 import * as React from 'react';
 
 function Table3(prop) {
