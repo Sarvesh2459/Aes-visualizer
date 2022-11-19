@@ -158,13 +158,9 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 80%;
+  height: 26%;
 }
 
-td {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 1px;
-}
 th {
   text-align: left;
   font-size: large;
