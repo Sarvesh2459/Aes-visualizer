@@ -157,15 +157,8 @@
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-<<<<<<< HEAD
   width: 80%;
-  height: 26%;
 }
-
-=======
-  width: 10%;
-}
->>>>>>> 6a1b05b819e92b2a89284016a805ebad1db5d80c
 th {
   text-align: left;
   font-size: large;
