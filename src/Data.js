@@ -1,7 +1,13 @@
 //adk
 // const key="100163636363636363636363636363ff";
-const key="00000000000000000000000000000000";
-const plaintext ="637b76757b767563c0d27cc5d27cc5c0";
+import Input, {plain_text,key_in} from "./Input";
+
+console.log(plain_text)
+console.log(key_in)
+var key=key_in
+var plaintext=plain_text
+// const key="00000000000000000000000000000000";
+// const plaintext ="637b76757b767563c0d27cc5d27cc5c0";
 
 var arko = ''
 for(var i=0;i<16;i++){
