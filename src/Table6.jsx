@@ -1,4 +1,4 @@
-import './App.css';
+import './table.css';
 import * as React from 'react';
 import {useEffect,useState} from 'react'
 

@@ -157,14 +157,19 @@
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
+<<<<<<< HEAD
   width: 80%;
   height: 26%;
 }
 
+=======
+  width: 10%;
+}
+>>>>>>> 6a1b05b819e92b2a89284016a805ebad1db5d80c
 th {
   text-align: left;
   font-size: large;
-  padding: 30px;
+  padding: 2px;
 }
 
 tr:nth-child(even) {
@@ -268,3 +273,5 @@ tr:nth-child(even) {
 .table-glow {
   animation: table_glow 1300ms infinite;
 } */
+
+

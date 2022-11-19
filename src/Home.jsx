@@ -22,12 +22,12 @@ export default function Home() {
   }, []);
   return (
     <div>
-    <>
+    <div style={{marginLeft:'40%'}}>
     {(round1>=56)&& <h1>Encryption completed</h1>}
-    {(round1<=3)&& <h1>round 0</h1>}
-    {(round1>3 && round1<44) && <h1>round {Math.floor(round1/4)-1 }</h1>}
-    {(round1>=44 && round1<56)&& <h1>round 10</h1>}
-    </>
+    {(round1<=3)&& <h1>Round 0</h1>}
+    {(round1>3 && round1<44) && <h1>Round {Math.floor(round1/4)-1 }</h1>}
+    {(round1>=44 && round1<56)&& <h1>Round 10</h1>}
+    </div>
     <Timeline position="alternate">
       <TimelineItem>
         <TimelineSeparator>
@@ -35,10 +35,8 @@ export default function Home() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-        <Link to={''} style={{ textDecoration: 'none' }}>
-        <button style={{backgroundColor: "#0E5E6F"}} className={(round1>=1 && round1<4) ?'button-glow':'button-18'} role="button" >AddRoundKey
-        </button>
-        </Link>
+        <div style={{backgroundColor: "#0E5E6F"}} className={(round1>=1 && round1<4) ?'button-glow':'button-18'}  >AddRoundKey
+        </div>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -47,11 +45,9 @@ export default function Home() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-        <Link to={'/sb'} style={{ textDecoration: 'none' }}>
-        <button style={{backgroundColor:"#CFD2CF", color:"black"}} className={(round1>=8 && round1<44 && round1%4==0) ?'button-glow':'button-18'} role="button" >
+        <div  style={{backgroundColor:"#CFD2CF", color:"black"}} className={(round1>=8 && round1<44 && round1%4==0) ?'button-glow':'button-18'}  >
         SubBytes
-        </button>
-        </Link>
+        </div>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -60,11 +56,11 @@ export default function Home() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-        <Link to={'/shiftrows'} style={{ textDecoration: 'none' }}>
-        <button style={{backgroundColor: "#0E5E6F"}} className={(round1>=8 && round1<44 && round1%4==1) ?'button-glow':'button-18'} role="button" >
+     
+        <div  style={{backgroundColor: "#0E5E6F"}} className={(round1>=8 && round1<44 && round1%4==1) ?'button-glow':'button-18'}  >
         ShiftRows
-        </button>
-        </Link>
+        </div>
+     
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -73,11 +69,11 @@ export default function Home() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-        <Link to={'/mixcol'} style={{ textDecoration: 'none' }}>
-        <button style={{backgroundColor:"#CFD2CF", color:"black"}} className={(round1>=8 && round1<44 && round1%4==2) ?'button-glow':'button-18'} role="button" >
+       
+        <div  style={{backgroundColor:"#CFD2CF", color:"black"}} className={(round1>=8 && round1<44 && round1%4==2) ?'button-glow':'button-18'}  >
         MixColumns
-        </button>
-        </Link></TimelineContent>
+        </div>
+        </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
@@ -85,9 +81,9 @@ export default function Home() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-        <button style={{backgroundColor: "#0E5E6F"}} className={(round1>=8 && round1<44 && round1%4==3) ?'button-glow':'button-18'} role="button" >
+        <div  style={{backgroundColor: "#0E5E6F"}} className={(round1>=8 && round1<44 && round1%4==3) ?'button-glow':'button-18'}  >
         AddRoundKey
-        </button>
+        </div>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -96,9 +92,9 @@ export default function Home() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-        <button style={{backgroundColor:"#CFD2CF", color:"black"}} className={(round2>=44 && round1<47) ?'button-glow':'button-18'} role="button" >
+        <div  style={{backgroundColor:"#CFD2CF", color:"black"}} className={(round2>=44 && round1<47) ?'button-glow':'button-18'}  >
         SubBytes
-        </button>
+        </div>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -107,9 +103,9 @@ export default function Home() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-        <button style={{backgroundColor: "#0E5E6F"}} className={(round1>=47 && round1<50) ?'button-glow':'button-18'} role="button" >
+        <div  style={{backgroundColor: "#0E5E6F"}} className={(round1>=47 && round1<50) ?'button-glow':'button-18'}  >
         ShiftRows
-        </button>
+        </div>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -117,9 +113,9 @@ export default function Home() {
           <TimelineDot variant="outlined" color="secondary" />
         </TimelineSeparator>
         <TimelineContent>
-        <button style={{backgroundColor:"#CFD2CF", color:"black"}} className={(round1>=50 && round1<53) ?'button-glow':'button-18'} role="button" >
+        <div style={{backgroundColor:"#CFD2CF", color:"black"}} className={(round1>=50 && round1<53) ?'button-glow':'button-18'}  >
         AddRoundKey
-        </button>
+        </div>
         </TimelineContent>
       </TimelineItem>
       

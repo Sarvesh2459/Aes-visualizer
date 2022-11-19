@@ -95,6 +95,7 @@ function KeyExpansion() {
   return (
     <div className="App">
       <p>hello this is key expansion page</p>
+      <p>{data}</p>
     </div>
   );
 }
