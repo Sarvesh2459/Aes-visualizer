@@ -246,9 +246,11 @@ tr:nth-child(even) {
 
 .table-glow{
   color: black;
-  background-color: #EFBBCF;
-  font-weight: 900;
-
+  /* background-color: #58d665; */
+  /* font-weight: 900; */
+  font-size: xx-large;
+  border: 3px solid #09223b;
+  z-index: 500;
 }
 
 /* @keyframes table_glow {
