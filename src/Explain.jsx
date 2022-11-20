@@ -8,6 +8,7 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import './App.css'
+import Data from './Data'
 
 export default function Explain() {
   return (
@@ -17,7 +18,7 @@ export default function Explain() {
     
     <Data/>
          
-        <Link to={''} style={{ textDecoration: 'none', padding:"5%" }}>
+        <Link to={'/addroundkey'} style={{ textDecoration: 'none', padding:"5%" }}>
         <button  style={{backgroundColor: "#0E5E6F"}} className={'button-18'} role="button" >AddRoundKey
         </button>
         </Link>

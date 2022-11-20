@@ -12,7 +12,11 @@ function Table8(prop) {
 
     return () => clearInterval(interval,48000);
   }, []);
+  const start=()=>{
+    setflag(0)
+  }
   return (
+    <div>
       <table  className='tablekliye' style={{backgroundColor:"black",color:"white"}}>
         
         <tr  >
@@ -41,6 +45,8 @@ function Table8(prop) {
         </tr>     
         
       </table>
+      <button onClick={start}>click to restart the animation</button>
+      </div>
     
   );
 }

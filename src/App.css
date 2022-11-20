@@ -101,25 +101,25 @@
 
 .button-18:hover,
 .button-18:focus { 
-  background-color: #16437E;
+  background-color:rgb(27, 191, 32);
   color: #ffffff;
 }
 
 .button-18:active {
-  background: #09223b;
+  background: rgb(27, 191, 32);
   color: rgb(255, 255, 255, .7);
 }
 
 .button-18:disabled { 
   cursor: not-allowed;
-  background: rgba(0, 0, 0, .08);
+  background: rgb(27, 191, 32);
   color: rgba(0, 0, 0, .3);
 }
 
 
 .button-glow {
   align-items: center;
-  background-color: #0A66C2;
+  background-color: rgb(27, 191, 32);
   border: 0;
   border-radius: 100px;
   box-sizing: border-box;
@@ -148,34 +148,34 @@
 
 .button-glow:hover,
 .button-glow:focus { 
-  background-color: #16437E;
+  background-color: rgb(27, 191, 32);
   color: #ffffff;
 }
 
 .button-glow:active {
-  background: #09223b;
+  background: rgb(27, 191, 32);
   color: rgb(255, 255, 255, .7);
 }
 
 .button-glow:disabled { 
   cursor: not-allowed;
-  background: rgba(0, 0, 0, .08);
-  color: rgba(0, 0, 0, .3);
+  background: rgb(27, 191, 32);
+  color: rgb(27, 191, 32);
 }
 
 @keyframes glowing {
   0% {
-    background-color: #2ba805;
-    box-shadow: 0 0 5px #2ba805;
+    background-color: rgb(27, 191, 32);
+    box-shadow: 0 0 5px rgb(27, 191, 32);
   }
   50% {
-    background-color: #49e819;
-    box-shadow: 0 0 20px #49e819;
+    background-color: rgb(27, 191, 32);
+    box-shadow: 0 0 20px rgb(27, 191, 32);
     
   }
   100% {
-    background-color: #2ba805;
-    box-shadow: 0 0 5px #2ba805;
+    background-color: rgb(27, 191, 32);
+    box-shadow: 0 0 5px rgb(27, 191, 32);
     
   }
 }
