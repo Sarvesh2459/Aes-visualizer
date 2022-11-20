@@ -22,16 +22,16 @@ function MixCol() {
       <div  style={{float: "left", width: "30%"}} >
       <Table6  name={sb}/>
       </div>
-      <div  style={{float: "left",width:"1%",marginTop:"10%",marginRight:"3%",marginLeft:"2%"}} >
+      <div  style={{float: "left",width:"4%",marginTop:"10%",marginRight:"3%",marginLeft:"2%"}} >
       <CloseIcon sx={{fontSize:"60px",marginTop:"14%"}}/>
       </div>
-      <div  style={{float: "left", width: "30%"}} >
+      <div  style={{float: "left", width: "26%",height:"26%"}} >
       <Table7  name={mat}/>
       </div>
-      <div  style={{float: "left",width:"1%",marginTop:"10%",marginRight:"3%",marginLeft:"2%"}} >
+      <div  style={{float: "left",width:"4%",marginTop:"10%",marginRight:"3%",marginLeft:"2%"}} >
       <DragHandleIcon sx={{fontSize:"60px",marginTop:"14%"}}/>
       </div>
-      <div  style={{float: "left", width: "30%"}} >
+      <div  style={{float: "left", width: "26%",height:"26%"}} >
       <Table8  name={final}/>
       </div>
     </div>
