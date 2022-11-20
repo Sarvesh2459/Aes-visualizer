@@ -2,11 +2,13 @@ import './App.css';
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { UserContext } from './UserContext';
+import Dialog from './Dialog';
 
    export default function Input(){
     const {plaintext,setplaintext,key,setkey,arko,setarko,sb1,setsb1,mat,setmat,final,setfinal}=React.useContext(UserContext)
     return(
         <div className='Backgd'>
+            <Dialog val="true"/>
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',}}>
             <h1 style={{color:"rgb(27, 191, 32)"}}>AES Visualizer</h1>
             </div>

@@ -8,6 +8,7 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import './App.css'
+import Output from './output';
 
 export default function Home() {
   const [round1, setround1]=useState(1)  
@@ -31,7 +32,7 @@ export default function Home() {
     </div>
 </div>
 
-    
+    {round1 <=58 && <div>
     <Timeline position="alternate">
       <TimelineItem>
         <TimelineSeparator>
@@ -124,6 +125,8 @@ export default function Home() {
       </TimelineItem>
       
     </Timeline>
+    </div>}
+    {round1>=59 && <Output/>}
     </div>
   );
 }
