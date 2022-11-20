@@ -14,72 +14,46 @@ export default function Explain() {
   const { key } = useParams();
   console.log(key);
   return (
-    <div>
-    <Timeline position="alternate">
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot variant="outlined" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
+    <div className='Backgd'>
+      <div  style={{float: "left", width: "30%",marginLeft:"35%",marginRight:"35%",marginTop:"2%"}} >
+        <h1 style={{color:"rgb(27, 191, 32)",textAlign:"center",marginLeft:"2%"}}>The Choice is Yours</h1>
+        </div>
+    <div  style={{float: "left", width: "16%",height:"16%",marginLeft:"29%",marginRight:"7%",marginTop:"5%"}} >
         <Link to={''} style={{ textDecoration: 'none' }}>
-        <button  style={{backgroundColor: "#0E5E6F"}} className={'button-18'} role="button" >AddRoundKey
+        <button  style={{backgroundColor: "#0000FF" ,width:"80%",height:"80%"}} className={'button-18'} role="button" >AddRoundKey
         </button>
         </Link>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot variant="outlined" color="primary" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
+    </div>
+    <div  style={{float: "left", width: "16%",height:"16%",marginLeft:"7%",marginRight:"0%",marginTop:"5%"}} >
         <Link to={'/sb'} style={{ textDecoration: 'none' }}>
-        <button  style={{backgroundColor:"#CFD2CF", color:"black"}} className={'button-18'} role="button" >
+        <button  style={{backgroundColor:"#ED0800",width:"80%",height:"80%"}} className={'button-18'} role="button" >
         SubBytes
         </button>
         </Link>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot variant="outlined" color="primary" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-        <Link to={'/shiftrows'} style={{ textDecoration: 'none' }}>
-        <button  style={{backgroundColor: "#0E5E6F"}} className={'button-18'} role="button" >
-        ShiftRows
-        </button>
-        </Link>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot variant="outlined" color="primary" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-        <Link to={'/mixcol'} style={{ textDecoration: 'none' }}>
-        <button  style={{backgroundColor:"#CFD2CF", color:"black"}} className={'button-18'} role="button" >
-        MixColumns
-        </button>
-        </Link></TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot variant="outlined" color="secondary" />
-        </TimelineSeparator>
-        <TimelineContent>
+    </div>
+    <div  style={{float: "left", width: "16%",height:"16%",marginLeft:"44%",marginRight:"38%",marginTop:"2%"}} >
         <Link to={`/keyexpansion/${key}`} style={{ textDecoration: 'none' }}>
-        <button  style={{backgroundColor:"#CFD2CF", color:"black"}} className={'button-18'} role="button" >
+        <button style={{width:"80%",height:"80%"}} className={'grad'} role="button" >
         Key Expansion
         </button>
         </Link>
-        </TimelineContent>
-      </TimelineItem>
-      
-    </Timeline>
     </div>
+    <div  style={{float: "left", width: "16%",height:"16%",marginLeft:"29%",marginRight:"7%",marginTop:"2%"}} >
+        <Link to={'/shiftrows'} style={{ textDecoration: 'none' }}>
+        <button  style={{backgroundColor: "#0000FF",width:"80%",height:"80%"}} className={'button-18'} role="button" >
+        ShiftRows
+        </button>
+        </Link>
+    </div>
+    <div  style={{float: "left", width: "16%",height:"16%",marginLeft:"7%",marginRight:"0%",marginTop:"2%"}} >
+        <Link to={'/mixcol'} style={{ textDecoration: 'none' }}>
+        <button  style={{backgroundColor:"#ED0800",width:"80%",height:"80%"}} className={'button-18'} role="button" >
+        MixColumns
+        </button>
+        </Link>
+    </div>
+    
+    </div>
+      
   );
 }
