@@ -1,4 +1,4 @@
-import './table.css';
+import './table1.css';
 import * as React from 'react';
 import {useEffect,useState} from 'react'
 
@@ -16,7 +16,7 @@ function Table6(prop) {
   }, []);
   return (
 
-      <table>
+      <table className='tablekliye'>
         
         {flag>=1 && flag<=32 ?<tr className='table-glow'>
           <th>{arr[0]}{arr[1]}</th>

@@ -19,7 +19,7 @@ function Table2(prop) {
         <tr>
           <th></th>
           <th></th>
-          <th style={{color:"#EB1D36"}}>{arr[2]}{arr[3]}</th>
+          <th style={{color:'white'}}>{arr[2]}{arr[3]}</th>
           <th>{arr[10]}{arr[11]}</th>
           <th>{arr[18]}{arr[19]}</th>
           <th>{arr[26]}{arr[27]}</th>
@@ -27,17 +27,17 @@ function Table2(prop) {
         </tr>
         <tr>
           <th></th>
-          <th style={{color:"#EB1D36"}}>{arr[4]}{arr[5]}</th>
-          <th style={{color:"#EB1D36"}}>{arr[12]}{arr[13]}</th>
+          <th style={{color:'white'}}>{arr[4]}{arr[5]}</th>
+          <th style={{color:'white'}}>{arr[12]}{arr[13]}</th>
           <th>{arr[20]}{arr[21]}</th>
           <th>{arr[28]}{arr[29]}</th>
           <th></th>
           <th></th>
         </tr>
         <tr>
-          <th style={{color:"#EB1D36"}}>{arr[6]}{arr[7]}</th>
-          <th style={{color:"#EB1D36"}}>{arr[14]}{arr[15]}</th>
-          <th style={{color:"#EB1D36"}}>{arr[22]}{arr[23]}</th>
+          <th style={{color:'white'}}>{arr[6]}{arr[7]}</th>
+          <th style={{color:'white'}}>{arr[14]}{arr[15]}</th>
+          <th style={{color:'white'}}>{arr[22]}{arr[23]}</th>
           <th>{arr[30]}{arr[31]}</th>
           <th></th>
           <th></th>

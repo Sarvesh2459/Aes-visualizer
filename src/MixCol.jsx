@@ -15,22 +15,28 @@ function MixCol() {
   const sb= "02030101010203010101020303010102"; //const
 
   return (
-    <div style={{marginLeft:"5%",marginRight:"0%",marginTop:"14%"}}>
-      <div  style={{float: "left", width: "26%",height:"26%"}} >
+    <div className='Backgd'>
+      <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+        <h1  style={{color:"rgb(27, 191, 32)",backgroundColor:"black",borderRadius:"16px",marginTop:"4%"}}>Mix Column</h1>
+      </div>
+      <div style={{marginTop:"4%"}}>
+      <div  style={{float: "left", width: "26%",height:"26%",marginLeft:"3%",marginRight:"0%"}} >
       <Table6  name={sb}/>
       </div>
-      <div  style={{float: "left",width:"4%",marginTop:"10%",marginRight:"3%",marginLeft:"2%"}} >
-      <CloseIcon sx={{fontSize:"60px",marginTop:"14%"}}/>
+      <div  style={{float: "left",width:"3%",marginRight:"3%",marginLeft:"1%",marginTop:"9%"}} >
+      <CloseIcon sx={{fontSize:"60px"}}/>
       </div>
-      <div  style={{float: "left", width: "26%",height:"26%"}} >
+      <div  style={{float: "left", width: "26%",height:"26%",marginLeft:"0%",marginRight:"0%"}} >
       <Table7  name={mat}/>
       </div>
-      <div  style={{float: "left",width:"4%",marginTop:"10%",marginRight:"3%",marginLeft:"2%"}} >
-      <DragHandleIcon sx={{fontSize:"60px",marginTop:"14%"}}/>
+      <div  style={{float: "left",width:"3%",marginRight:"3%",marginLeft:"1%",marginTop:"9%"}} >
+      <DragHandleIcon sx={{fontSize:"60px"}}/>
       </div>
-      <div  style={{float: "left", width: "26%",height:"26%"}} >
+      <div  style={{float: "left", width: "26%",height:"26%",marginLeft:"0%",marginRight:"1%"}} >
       <Table8  name={final}/>
       </div>
+      </div>
+      
     </div>
     
   );

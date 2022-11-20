@@ -1,10 +1,10 @@
-import './table1.css';
+import './table.css';
 import * as React from 'react';
 
 function Table(prop) {
     const arr=prop.name 
   return (
-      <table>
+      <table >
         
         <tr>
           <th>{arr[0]}{arr[1]}</th>

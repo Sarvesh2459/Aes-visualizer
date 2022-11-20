@@ -1,25 +1,19 @@
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 80%;
+    border-width: 3px;
+    border-color: rgb(27, 191, 32);
+    border-style: solid;
+    border-radius: 10px;
+    /* borderWidth :"1px", borderColor :"black", borderStyle :'solid'}} */
   }
   th {
     text-align: left;
+    background-color: black;
+    color: rgb(27, 191, 32);
     font-size: large;
     padding: 30px;
-  }
-  .col-show {
-    opacity: 1;
-    color: #EB1D36;
-  }
-  .col-hide {
-    opacity: 0;
-  }
-  
-  
-  .table-glow{
-    color: black;
-    background-color: #EFBBCF;
-    font-weight: 900;
-  
+    border-width: 1px;
+    border-color: rgb(27, 191, 32);
+    border-style: solid;
   }
