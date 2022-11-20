@@ -23,7 +23,6 @@ export default function Dialogg(prop) {
 
   return (
     <div>
-      
       <Dialog
         fullScreen={fullScreen}
         open={open}
@@ -31,7 +30,7 @@ export default function Dialogg(prop) {
         aria-labelledby="responsive-dialog-title"
       >
         <DialogTitle id="responsive-dialog-title">
-          {"Use Google's location service?"}
+          {"You are about to use Edvanced Encrytion Standard"}
         </DialogTitle>
         <DialogContent>
           <DialogContentText>
