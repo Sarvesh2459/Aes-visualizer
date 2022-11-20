@@ -17,9 +17,10 @@ const change=() => {
   
 }
   return (
-    <div className="App">
-      <p>hello this is key expansion page</p>
-      <p>{key}</p>
+    <div className="Backgd">
+      <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+        <h1  style={{color:"rgb(27, 191, 32)",backgroundColor:"black",borderRadius:"16px",marginTop:"3%"}}>KeyExpansion</h1>
+      </div>
       <button onClick={change}>
                 Sbox substitution
         </button>

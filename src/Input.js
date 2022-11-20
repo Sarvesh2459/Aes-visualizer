@@ -10,7 +10,7 @@ import { UserContext } from './UserContext';
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',}}>
             <h1 style={{color:"rgb(27, 191, 32)"}}>AES Visualizer</h1>
             </div>
-            <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',marginTop:"-46px"}}>
+            <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',marginTop:"-46px",marginLeft:"13%"}}>
                 <div style={{display: 'flex',  justifyContent:'right', alignItems:'right'}}>
                 <h3 style={{color:"white"}}>By TechHeist3.0</h3>
                 </div>
