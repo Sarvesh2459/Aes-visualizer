@@ -126,7 +126,7 @@ export default function Home() {
       
     </Timeline>
     </div>}
-    {round1>=59 && <Output/>}
+    {round1>=59 && <Output />}
     </div>
   );
 }

@@ -41,16 +41,12 @@ function sb(plaintext){
         116,31,75,189,139,138,112,62,181,102,72,3,246,14,97,53,87,185,134,193,29,
         158,225,248,152,17,105,217,142,148,155,30,135,233,206,85,40,223,140,161,
         137,13,191,230,66,104,65,153,45,15,176,84,187,22);
-    
-   
-
    var sb2=''
     for (var i=0;i<16;i++){
      sb2 = sb2.concat(decimalToHex(Sbox[parseInt(plaintext.slice(2*i,2*i+2),16)]));
     };
     return sb2;
 }
-
 function sr(plaintext){
         var state = new Array();
         for(var i=0;i<16;i++){
@@ -67,8 +63,6 @@ function sr(plaintext){
 
         return mat1;
 }
-
-
 function aes_mul( a, b )	{
     var res = 0;
     while( a > 0 )	{
@@ -90,7 +84,6 @@ function aes_mul( a, b )	{
     }
     return res;
   }
-
   function mc(plaintext){
     var final1='';
     const sb= "02030101010203010101020303010102";
@@ -100,8 +93,6 @@ function aes_mul( a, b )	{
     }
     return final1;
   }
-
-  
 function rot_word(temp){
     [temp[0],temp[1],temp[2],temp[3]] = [temp[1],temp[2],temp[3],temp[0]];
     return temp
@@ -189,7 +180,6 @@ function KeyExpansion(k) {
       final = pre.join('');
       return final;
 }
-
 var totalkey = KeyExpansion(key);
 // console.log(totalkey);
 var curr = ark(plaintext,key);
@@ -205,9 +195,10 @@ curr = ark(curr,totalkey.slice(32*(10),32*(10)+32));
 console.log(curr);
     return(
         <>
-            <h1>{curr}</h1>
+        <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+        <h1  style={{color:"white",borderRadius:"16px",marginTop:"8%"}}>{curr}</h1>
+      </div>
         </>
     );
 }
-
 export default Output

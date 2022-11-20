@@ -22,7 +22,7 @@ export default function Dialogg(prop) {
   };
 
   return (
-    <div>
+    <div >
       <Dialog
         fullScreen={fullScreen}
         open={open}
@@ -30,7 +30,7 @@ export default function Dialogg(prop) {
         aria-labelledby="responsive-dialog-title"
       >
         <DialogTitle id="responsive-dialog-title">
-          {"You are about to use Edvanced Encrytion Standard"}
+          {"You are about to use Advanced Encrytion Standard"}
         </DialogTitle>
         <DialogContent>
           <DialogContentText>
