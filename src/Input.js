@@ -12,7 +12,7 @@ import { UserContext } from './UserContext';
             </div>
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',marginTop:"-46px"}}>
                 <div style={{display: 'flex',  justifyContent:'right', alignItems:'right'}}>
-                <h3 style={{color:"rgb(27, 191, 32)"}}>By TechHeist3.0</h3>
+                <h3 style={{color:"white"}}>By TechHeist3.0</h3>
                 </div>
             </div>
         <div  style={{float: "left", width: "8%",height:"8%",marginLeft:"28%",marginRight:"10%",marginTop:"5%"}} >
@@ -30,7 +30,7 @@ import { UserContext } from './UserContext';
         }}></input>
         </div>
         <div  style={{float: "left", width: "30%",marginLeft:"35%",marginRight:"35%",marginTop:"7%"}} >
-        <h1 style={{color:"rgb(27, 191, 32)",textAlign:"center",marginLeft:"2%"}}>The Choise is Yours</h1>
+        <h1 style={{color:"rgb(27, 191, 32)",textAlign:"center",marginLeft:"2%"}}>The Choice is Yours</h1>
         </div>
         <div  style={{float: "left", width: "8%",height:"8%",marginLeft:"29%",marginRight:"10%",marginTop:"3%"}} >
             <Link to={`/explain`} style={{ textDecoration: 'none' }}>
