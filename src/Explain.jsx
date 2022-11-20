@@ -13,11 +13,12 @@ import Data from './Data'
 export default function Explain() {
   return (
     <div className='Backgd'>
+      <Data/>
       <div  style={{float: "left", width: "30%",marginLeft:"35%",marginRight:"35%",marginTop:"2%"}} >
         <h1 style={{color:"rgb(27, 191, 32)",textAlign:"center",marginLeft:"2%"}}>The Choice is Yours</h1>
         </div>
     <div  style={{float: "left", width: "16%",height:"16%",marginLeft:"29%",marginRight:"7%",marginTop:"5%"}} >
-        <Link to={''} style={{ textDecoration: 'none' }}>
+        <Link to={'/addroundkey'} style={{ textDecoration: 'none' }}>
         <button  style={{backgroundColor: "#0000FF" ,width:"80%",height:"80%"}} className={'button-18'} role="button" >AddRoundKey
         </button>
         </Link>
@@ -30,7 +31,7 @@ export default function Explain() {
         </Link>
     </div>
     <div  style={{float: "left", width: "16%",height:"16%",marginLeft:"44%",marginRight:"38%",marginTop:"2%"}} >
-        <Link to={`/keyexpansion/${key}`} style={{ textDecoration: 'none' }}>
+        <Link to={`/keyexpansion`} style={{ textDecoration: 'none' }}>
         <button style={{width:"80%",height:"80%"}} className={'grad'} role="button" >
         Key Expansion
         </button>

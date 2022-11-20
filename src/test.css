@@ -1,0 +1,8 @@
+.example-container div{
+    background: black;
+    width: 100px;
+    height: 100px;
+}
+.c{
+    display: inline-block;
+}
