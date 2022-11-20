@@ -22,12 +22,16 @@ export default function Home() {
   }, []);
   return (
     <div>
-    <div style={{marginLeft:'40%'}}>
+      <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+      <div style={{justifyContent:"center", alignItems:'center'}}>
     {(round1>=56)&& <h1>Encryption completed</h1>}
     {(round1<=3)&& <h1>Round 0</h1>}
     {(round1>3 && round1<44) && <h1>Round {Math.floor(round1/4)-1 }</h1>}
     {(round1>=44 && round1<56)&& <h1>Round 10</h1>}
     </div>
+</div>
+
+    
     <Timeline position="alternate">
       <TimelineItem>
         <TimelineSeparator>

@@ -17,19 +17,19 @@ function Table5(prop) {
           <th>{arr[2]}{arr[3]}</th>
           <th>{arr[10]}{arr[11]}</th>
           <th>{arr[18]}{arr[19]}</th>
-          <th style={{color:"#EB1D36"}}>{arr[26]}{arr[27]}</th>
+          <th style={{color:"white"}}>{arr[26]}{arr[27]}</th>
         </tr>
         <tr>
           <th>{arr[4]}{arr[5]}</th>
           <th>{arr[12]}{arr[13]}</th>
-          <th style={{color:"#EB1D36"}}>{arr[20]}{arr[21]}</th>
-          <th style={{color:"#EB1D36"}}>{arr[28]}{arr[29]}</th>
+          <th style={{color:"white"}}>{arr[20]}{arr[21]}</th>
+          <th style={{color:"white"}}>{arr[28]}{arr[29]}</th>
         </tr>
         <tr>
           <th>{arr[6]}{arr[7]}</th>
-          <th style={{color:"#EB1D36"}}>{arr[14]}{arr[15]}</th>
-          <th style={{color:"#EB1D36"}}>{arr[22]}{arr[23]}</th>
-          <th style={{color:"#EB1D36"}}>{arr[30]}{arr[31]}</th>
+          <th style={{color:"white"}}>{arr[14]}{arr[15]}</th>
+          <th style={{color:"white"}}>{arr[22]}{arr[23]}</th>
+          <th style={{color:"white"}}>{arr[30]}{arr[31]}</th>
         </tr>  
         
       </table>

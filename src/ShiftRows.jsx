@@ -22,33 +22,34 @@ function ShiftRows() {
   }, []);
   
   return (
-    <div >
-    {/* <p>shift row : {mat} </p> */}
-    <h1 style={{marginLeft: "43%"}}>Shift Row</h1>
-    <div style={{marginLeft: "15%",marginTop: "4%"}}>    
-      {(flag>=1 && flag<3) && <div style={{marginLeft: "25%",padding:"2%"}} >
+    <div className='Backgd'>
+      <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+    <h1  style={{color:"rgb(27, 191, 32)",backgroundColor:"black",borderRadius:"16px",marginTop:"4%"}}>Shift Rows</h1>
+    </div>
+    <div style={{marginTop: "4%" }}>    
+      {(flag>=1 && flag<3) && <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
       <Table  name={sb1}/>
       </div>}
-      {(flag>=3 && flag<5) && <div style={{marginLeft: "17%",padding:"2%"}} >
+      {(flag>=3 && flag<5) && <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
       <Table2 name={sb1}/>
       </div>}
-      {(flag>=5 && flag<7) && <div style={{marginLeft: "17%",padding:"2%"}} >
+      {(flag>=5 && flag<7) && <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
       <Table3 name={sb1}/>
       </div>}
-      {(flag>=7 && flag<9) && <div style={{marginLeft: "17%",padding:"2%"}} >
+      {(flag>=7 && flag<9) && <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
       <Table4 name={sb1}/>
       </div>}
-      {(flag>=9 && flag<11) && <div style={{marginLeft: "25%",padding:"2%"}} >
+      {(flag>=9 && flag<11) && <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
       <Table5 name={mat}/>
       </div>}
-      {(flag>=11) && <div style={{padding:"2%"}} >
-      <div  style={{float: "left", width: "27%"}} >
+      {(flag>=11) && <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}} >
+      <div  style={{width: "27%",display: 'flex',  justifyContent:'center', alignItems:'center'}} >
       <Table name={sb1}/>
       </div>
-      <div  style={{float: "left", width: "27%"}} >
-      <EastIcon sx={{marginTop: "40%"  ,fontSize:"80px", marginLeft :"40%"}}/>
+      <div  style={{width: "5%",marginLeft:"5%",marginRight:"5%",display: 'flex',  justifyContent:'center', alignItems:'center'}} >
+      <EastIcon sx={{marginTop: "40%"  ,fontSize:"80px" }}/>
       </div>
-      <div  style={{float: "left", width: "27%"}} >
+      <div  style={{width: "27%",display: 'flex',  justifyContent:'center', alignItems:'center'}} >
       <Table5  name={mat}/>
       </div>
       </div>}

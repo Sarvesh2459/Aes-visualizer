@@ -1,11 +1,11 @@
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 30%;
+    border-radius: 10px;
   }
   
   td {
-    border: 1px solid #dddddd;
+    border: 3px solid #dddddd;
     text-align: left;
     padding: 1px;
   }
@@ -14,6 +14,11 @@ table {
     font-size: large;
     padding: 30px;
   }
-  tr:nth-child(even) {
-    background-color: #99CCFF;
+  .tablekliye{
+    border: 3px solid rgb(27, 191, 32);
+    text-align: left;
+    font-size: large;
+    padding: 30px;
+    font-weight: 800;
   }
+ 

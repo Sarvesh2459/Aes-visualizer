@@ -8,11 +8,8 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import './App.css'
-import { useParams } from 'react-router-dom';
-import Data from './Data';
 
 export default function Explain() {
-  const { key } = useParams();
   return (
     <>
     <h1 style={{display: 'flex',  justifyContent:'center', alignItems:'center', marginTop:"2%"}}>The Choice is yours</h1>
@@ -42,7 +39,7 @@ export default function Explain() {
         MixColumns
         </button>
         </Link>
-        <Link to={`/keyexpansion/${key}`} style={{ textDecoration: 'none', padding:"5%" }}>
+        <Link to={`/keyexpansion`} style={{ textDecoration: 'none', padding:"5%" }}>
         <button  style={{backgroundColor:"#CFD2CF", color:"black"}} className={'button-18'} role="button" >
         Key Expansion
         </button>

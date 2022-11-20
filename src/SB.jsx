@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './App.css';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Table from './Table';
 // import {arko,sb1,mat,final} from './Data'
 import EastIcon from '@mui/icons-material/East';
@@ -8,35 +8,39 @@ import {UserContext} from './UserContext'
 
 
 function SB() {
-  const [visible, setvisible]=useState(true)
+  const [flag, setflag]=useState(0)
   const {plaintext,setplaintext,key,setkey,arko,setarko,sb1,setsb1,mat,setmat,final,setfinal}=React.useContext(UserContext)
-  const change=()=>{
-    setvisible(false)
-  }
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setflag((prevflag) => prevflag + 1);
+    }, 400);
+
+    return () => clearInterval(interval,48000);
+  }, []);
   return (
-    <div className="App">
-       <p>ark : {arko}</p>
-       <p>sb: {sb1}</p>
-       <div style={{margin: "auto", padding: "1%"}}  >
-       <button className={visible ?'button-18':'fadeOut3'} onClick={change}>
-                Sbox substitution
-        </button>
-        </div>
-        <div style={{marginTop:"7%"}}>
-      <div className={visible ?'fadeIn':'fadeOut1'} style={{marginLeft:"15%",float: "left", width: "40%"}} >
-      <Table  name={arko}/>
-      </div>
-      <div className={visible ?'fadeOut':'fadeIn'}  style={{float: "left", width: "27%"}} >
-      <EastIcon sx={{marginTop: "40%"  ,fontSize:"80px", marginLeft :"165%"}}/>
-      </div>
-      <div className={visible ?'fadeOut':'fadeIn'} style={{marginLeft:"1%",float: "right" , width: "42%"}} >
-      <Table name={sb1}/>
-      </div>
-      </div>
+  <div className='Backgd'>
+    <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+    <h1  style={{color:"rgb(27, 191, 32)",backgroundColor:"black",borderRadius:"16px",marginTop:"4%"}}>S-box Substitution</h1>
     </div>
+  <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',marginTop:"2%"}}>
+  
+    <div  className={(flag<=0) ?'fadeIn':'fadeOut1'} style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "28%",zIndex:"1"}} >
+      <Table  name={arko}/>
+    </div>
+    <div  style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "15%"}} >
+    <table style={{margin:"0%",width:"65%",height:"100%",border:"1px"}}>
+        <tr style={{margin:"0%"}}>
+          <th className='garvi'>{"S-box"}</th>
+        </tr>
+    </table>
+    </div>
+    <div className={(flag<=0) ?'fadeOut':'fadeIn'} style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "28%",zIndex:"2"}} >
+      <Table name={sb1}/>
+    </div>
+</div> 
+</div>
   );
 }
-
 export default SB;
 
 

@@ -1,20 +1,14 @@
 import './App.css';
 import * as React from 'react';
-import Home from './Home';
-import { useParams } from 'react-router-dom';
-import Table from './Table';
 import CloseIcon from '@mui/icons-material/Close';
 import DragHandleIcon from '@mui/icons-material/DragHandle';
 import Table6 from './Table6';
 import Table7 from './Table7';
 import Table8 from './Table8';
-// import {arko,sb1,mat,final} from './Data';
 import {UserContext} from './UserContext'
 
-function MixCol() {
-  const { data } = useParams();
+function AddRoundKey() {
   const {plaintext,setplaintext,key,setkey,arko,setarko,sb1,setsb1,mat,setmat,final,setfinal}=React.useContext(UserContext)
-  const sb= "02030101010203010101020303010102"; //const
 
   return (
     <div className='Backgd'>
@@ -23,19 +17,19 @@ function MixCol() {
       </div>
       <div style={{marginTop:"4%"}}>
       <div  style={{float: "left", width: "26%",height:"26%",marginLeft:"3%",marginRight:"0%"}} >
-      <Table6  name={sb}/>
+      <Table6  name={plaintext}/>
       </div>
       <div  style={{float: "left",width:"3%",marginRight:"3%",marginLeft:"1%",marginTop:"9%"}} >
       <CloseIcon sx={{fontSize:"60px"}}/>
       </div>
       <div  style={{float: "left", width: "26%",height:"26%",marginLeft:"0%",marginRight:"0%"}} >
-      <Table7  name={mat}/>
+      <Table7  name={key}/>
       </div>
       <div  style={{float: "left",width:"3%",marginRight:"3%",marginLeft:"1%",marginTop:"9%"}} >
       <DragHandleIcon sx={{fontSize:"60px"}}/>
       </div>
       <div  style={{float: "left", width: "26%",height:"26%",marginLeft:"0%",marginRight:"1%"}} >
-      <Table8  name={final}/>
+      <Table8  name={arko}/>
       </div>
       </div>
       
@@ -44,4 +38,4 @@ function MixCol() {
   );
 }
 
-export default MixCol;
+export default AddRoundKey;

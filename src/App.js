@@ -10,10 +10,11 @@ import Explain from './Explain';
 import {UserContext} from './UserContext'
 import { Route, Routes } from 'react-router-dom';
 import {useState} from 'react'
+import AddRoundKey from './AddRoundKey';
 
 function App() {
-  const [plaintext,setplaintext]=useState("")
-  const [key,setkey]=useState("")
+  const [plaintext,setplaintext]=useState("7b75767b7a123eabc8957b75767a123e")
+  const [key,setkey]=useState("12345678901234567890123456789012")
   const [arko,setarko]=useState("")
   const [sb1,setsb1]=useState("")
   const [mat,setmat]=useState("")
@@ -24,11 +25,12 @@ function App() {
       <Routes>
 				<Route path="/home" element={<Home />} />
 				<Route exact path="/" element={<Input />} />
-				<Route exact path="/keyexpansion/:data" element={<KeyExpansion />} />	
+				<Route exact path="/keyexpansion" element={<KeyExpansion />} />	
         <Route exact path="/sb" element={<SB />} />
         <Route exact path="/shiftrows" element={<ShiftRows />} />
         <Route exact path="/mixcol" element={<MixCol />} />		
-        <Route exact path="/explain/:key" element={<Explain/>} />
+        <Route exact path="/explain" element={<Explain/>} />
+        <Route exact path="/addroundkey" element={<AddRoundKey/>} />
 
 			</Routes>
     </UserContext.Provider>

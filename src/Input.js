@@ -18,7 +18,7 @@ import { UserContext } from './UserContext';
         onChange={(e)=>{
         setkey(e.target.value)
         }}></input>
-        <Link to={`/explain/${key}`} style={{ textDecoration: 'none' }}>
+        <Link to={`/explain`} style={{ textDecoration: 'none' }}>
         <button onClick={pass_data} >step Visualization</button>
         </Link>
         <Link to={`/home`} style={{ textDecoration: 'none' }}>
