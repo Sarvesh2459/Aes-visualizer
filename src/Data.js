@@ -1,19 +1,18 @@
-//adk
-// const key="100163636363636363636363636363ff";
-import Input, {plain_text,key_in} from "./Input";
+import * as React from 'react';
+import { UserContext } from './UserContext';
 
-console.log(plain_text)
-console.log(key_in)
-var key=key_in
-var plaintext=plain_text
-// const key="00000000000000000000000000000000";
-// const plaintext ="637b76757b767563c0d27cc5d27cc5c0";
+export default function Data() {
+   const {plaintext,setplaintext,key,setkey,arko,setarko,sb1,setsb1,mat,setmat,final,setfinal}=React.useContext(UserContext)
+   console.log(plaintext)
+   console.log(key)
 
-var arko = ''
+
+// var arko = ''
+var arko1=''
 for(var i=0;i<16;i++){
-arko = arko.concat(decimalToHex(parseInt(key.slice(2*i,2*i+2),16)^parseInt(plaintext.slice(2*i,2*i+2),16)))
+arko1 = arko1.concat(decimalToHex(parseInt(key.slice(2*i,2*i+2),16)^parseInt(plaintext.slice(2*i,2*i+2),16)))
 }
-
+setarko(arko1)
 
 
 
@@ -32,12 +31,13 @@ var Sbox = new Array(99,124,119,123,242,107,111,197,48,1,103,43,254,215,171,
     158,225,248,152,17,105,217,142,148,155,30,135,233,206,85,40,223,140,161,
     137,13,191,230,66,104,65,153,45,15,176,84,187,22);
   
-   //  const arko="100163636363636363636363636363ff"; //input --> ARK
-    var sb1=""; //output
+   
+   //  var sb1=""; //output
+   var sb2=''
     for (var i=0;i<16;i++){
-     sb1 = sb1.concat(decimalToHex(Sbox[parseInt(arko.slice(2*i,2*i+2),16)]));
+     sb2 = sb2.concat(decimalToHex(Sbox[parseInt(arko.slice(2*i,2*i+2),16)]));
     };
-
+    setsb1(sb2)
 
    //  shift row
    
@@ -50,7 +50,10 @@ for(var i=0;i<16;i++){
 [state[2],state[6],state[10],state[14]] = [state[10],state[14],state[2],state[6]];
 [state[3],state[7],state[11],state[15]] = [state[15],state[3],state[7],state[11]];
 
-const mat = state.join('');
+// const mat = state.join('');
+var mat1=''
+ mat1 = state.join('');
+setmat(mat1)
 
 
 
@@ -59,7 +62,7 @@ const mat = state.join('');
 //mixcol
 
 const sb= "02030101010203010101020303010102"; //const
-// const mat="637b76757b767563c0d27cc5d27cc5c0";
+
 
 function decimalToHex(d, padding) {
     var hex = Number(d).toString(16);
@@ -92,11 +95,18 @@ function decimalToHex(d, padding) {
     }
     return res;
   }
-var final =""
+// var final =""
+var final1=''
 for(var j=0;j<4;j++){
     for(var i=0;i<4;i++)
-    final = final.concat(decimalToHex((aes_mul(parseInt(mat.slice(8*j,8*j+2),16),parseInt(sb.slice(8*i,8*i+2),16)))^(aes_mul(parseInt(mat.slice(8*j+2,8*j+4),16),parseInt(sb.slice(8*i+2,8*i+4),16)))^(aes_mul(parseInt(mat.slice(8*j+6,8*j+8),16),parseInt(sb.slice(8*i+6,8*i+8),16)))^(aes_mul(parseInt(mat.slice(8*j+4,8*j+6),16),parseInt(sb.slice(8*i+4,8*i+6),16)))));
+    final1 = final1.concat(decimalToHex((aes_mul(parseInt(mat.slice(8*j,8*j+2),16),parseInt(sb.slice(8*i,8*i+2),16)))^(aes_mul(parseInt(mat.slice(8*j+2,8*j+4),16),parseInt(sb.slice(8*i+2,8*i+4),16)))^(aes_mul(parseInt(mat.slice(8*j+6,8*j+8),16),parseInt(sb.slice(8*i+6,8*i+8),16)))^(aes_mul(parseInt(mat.slice(8*j+4,8*j+6),16),parseInt(sb.slice(8*i+4,8*i+6),16)))));
   }
+  setfinal(final1)
+
+   return(
+      <></>
+   )
+}
 
 
-export {arko,sb1,mat,final}
+

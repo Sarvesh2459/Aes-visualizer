@@ -8,15 +8,17 @@ import DragHandleIcon from '@mui/icons-material/DragHandle';
 import Table6 from './Table6';
 import Table7 from './Table7';
 import Table8 from './Table8';
-import {arko,sb1,mat,final} from './Data';
+// import {arko,sb1,mat,final} from './Data';
+import {UserContext} from './UserContext'
 
 function MixCol() {
   const { data } = useParams();
+  const {plaintext,setplaintext,key,setkey,arko,setarko,sb1,setsb1,mat,setmat,final,setfinal}=React.useContext(UserContext)
   const sb= "02030101010203010101020303010102"; //const
 
   return (
     <div style={{marginLeft:"3%",marginRight:"3%",marginTop:"14%"}}>
-    {/* <p>fianl: {final}</p> */}
+    <p>fianl: {final}</p>
       <div  style={{float: "left", width: "30%"}} >
       <Table6  name={sb}/>
       </div>

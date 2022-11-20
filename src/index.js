@@ -1,32 +1,15 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
-// import App from './App';
 import reportWebVitals from './reportWebVitals';
-import KeyExpansion from './KeyExpansion';
-import Input ,{plaintext,key} from './Input';
-import Home from './Home'
-import SB from './SB';
-import ShiftRows from './ShiftRows';
-import MixCol from './MixCol';
-import Explain from './Explain';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
   <React.StrictMode>
-    <Routes>
-				<Route path="/home" element={<Home />} />
-				<Route exact path="/" element={<Input />} />
-				<Route exact path="/keyexpansion/:data" element={<KeyExpansion />} />	
-        <Route exact path="/sb" element={<SB />} />
-        <Route exact path="/shiftrows" element={<ShiftRows />} />
-        <Route exact path="/mixcol" element={<MixCol />} />		
-        <Route exact path="/explain/:key" element={<Explain/>} />
-
-			</Routes>
+    <App/>
   </React.StrictMode>
   </BrowserRouter>
 );

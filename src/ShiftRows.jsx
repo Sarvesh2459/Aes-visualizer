@@ -7,10 +7,12 @@ import Table3 from './Table3';
 import Table4 from './Table4';
 import Table5 from './Table5';
 import EastIcon from '@mui/icons-material/East';
-import {arko,sb1,mat,final} from './Data'
+// import {arko,sb1,mat,final} from './Data'
+import {UserContext} from './UserContext'
 
 function ShiftRows() {
   const [flag, setflag]=useState(0)
+  const {plaintext,setplaintext,key,setkey,arko,setarko,sb1,setsb1,mat,setmat,final,setfinal}=React.useContext(UserContext)
   useEffect(() => {
     const interval = setInterval(() => {
       setflag((prevflag) => prevflag + 1);
