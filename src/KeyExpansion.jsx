@@ -74,7 +74,7 @@ function KeyExpansion(k) {
     0xfa, 0xef, 0xc5, 0x91, 0x39, 0x72, 0xe4, 0xd3, 0xbd, 0x61, 0xc2,
     0x9f, 0x25, 0x4a, 0x94, 0x33, 0x66, 0xcc, 0x83, 0x1d, 0x3a, 0x74,
     0xe8, 0xcb]
-    var key = new Array();
+    var key = [];
     for(var i=0;i<16;i++){
     key.push(k.slice(2*i,2*i+2))
     }
@@ -84,7 +84,7 @@ function KeyExpansion(k) {
   var rcon_it = 1;
   const exp_key_size = nb * (nr + 1) * 4;
   var w = [];
-  for(var i=0;i<nk*4;i++){
+  for(i=0;i<nk*4;i++){
     w[i] = parseInt(key[i],16)
   }
   var temp = [0,0,0,0];
@@ -102,11 +102,11 @@ function KeyExpansion(k) {
             temp = sub_word(temp);
         }
 
-        for (var j=0;j<4 ;j++){ w[i+j] = w[i-offset+j] ^ temp[j]}
-        i += 4
+        for (var j=0;j<4 ;j++){ w[i+j] = w[i-offset+j] ^ temp[j]};
+        i += 4;
     }
-    var pre = new Array();
-    for(var i=0;i<exp_key_size;i++){
+    var pre = [];
+    for( i=0;i<exp_key_size;i++){
           pre.push(decimalToHex(w[i]))
     }
     var final1 = '';
@@ -114,8 +114,8 @@ function KeyExpansion(k) {
     return final1;
 }
 
-var totalkey = (KeyExpansion(key)).slice(0,32);
-console.log(totalkey)
+var totalkey = (KeyExpansion(key)).slice(32,64);
+// console.log(key)
 
 
 

@@ -16,7 +16,7 @@ function Table11(prop) {
       <table  className='tablekliye'>
         
         <tr>
-        {(flag>=1 && flag<=8)  ?<th style={{color:"white", fontSize: "large", border: "5px solid white",zIndex:"500", fontSize: "large", border: "5px solid white",zIndex:"500"}}>{arr[0]}{arr[1]}</th>: <th>{arr[0]}{arr[1]}</th>}
+        {(flag>=1 && flag<=8)  ?<th style={{color:"white", fontSize: "large", border: "5px solid white",zIndex:"500"}}>{arr[0]}{arr[1]}</th>: <th>{arr[0]}{arr[1]}</th>}
         {(flag>=33 && flag<=34)  ?<th style={{color:"white", fontSize: "large", border: "5px solid white",zIndex:"500"}}>{arr[8]}{arr[9]}</th>: <th>{arr[8]}{arr[9]}</th>}
         {(flag>=41 && flag<=42) ?<th style={{color:"white", fontSize: "large", border: "5px solid white",zIndex:"500"}}>{arr[16]}{arr[17]}</th>: <th>{arr[16]}{arr[17]}</th>}
         {(flag>=49 && flag<=50) ?<th style={{color:"white", fontSize: "large", border: "5px solid white",zIndex:"500"}}>{arr[24]}{arr[25]}</th>: <th>{arr[24]}{arr[25]}</th>}

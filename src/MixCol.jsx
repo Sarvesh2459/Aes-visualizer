@@ -1,7 +1,5 @@
 import './App.css';
 import * as React from 'react';
-import Home from './Home';
-import Table from './Table';
 import CloseIcon from '@mui/icons-material/Close';
 import DragHandleIcon from '@mui/icons-material/DragHandle';
 import Table6 from './Table6';
@@ -40,7 +38,7 @@ function MixCol() {
       </div>
       <div  style={{float: "left", width: "10%",height:"10%",marginLeft:"77%",marginRight:"%",marginTop:"3%"}} >
       <Link to={'/addroundkey'} style={{ textDecoration: 'none' }}>
-        <button  style={{backgroundColor: "#0000FF" ,width:"100%",height:"100%"}} className={'button-18'} role="button" >AddRoundKey
+        <button  style={{backgroundColor: "#0000FF" ,width:"100%",height:"100%"}} className={'button-18'}   >AddRoundKey
         </button>
         </Link>
         </div>
