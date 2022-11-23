@@ -115,6 +115,9 @@
   background: rgb(27, 191, 32);
   color: rgba(0, 0, 0, .3);
 }
+.lineth {
+  text-decoration: line-through;
+}
 .grad{
   align-items: center;
   background-image: linear-gradient(to right,#0000FF,#ED0800);

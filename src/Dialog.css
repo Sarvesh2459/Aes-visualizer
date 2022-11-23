@@ -1,21 +1,45 @@
 body {
     background:#000000;
 }
+.shado{
+    text-shadow: 3.5px 0.5px 1px black;
+}
+.lineth {
+    text-shadow: 3.5px 0.5px 1px black;
+    text-decoration: line-through;
+  }
 .popup {
      position: absolute;
     left: 50%;
     top: 50%;
+    margin-top: 1.7%;
     transform: translate(-50%, -50%);
-    background:#FF7391;
-    height:200px;
-    width:330px;
+    background-image: url(/src/pills\ \(1\).jpg);
+    background-size: cover ;
+    height:60%;
+    width:50%;
     border-radius:7px;
     border:1px solid #e5e5e5;
     font-family:'helvetica neue';
+
 }
-#Layer_2 {
+.btn1{
+    text-align: center;
+    width: 30%;
+    height: 100%;
+    margin-left: 35%;
+    margin-right: 35%;
+    font-size: larger;
+    font-family: 'helvetica neue';
+    border-radius: 12px;
+    background-color: red;
+}
+.bacf{
+filter: blur(-4px);
+}
+/* #Layer_2 {
     margin:7px;
-}
+} */
 /* h1 {
     color:white;
     font-family:helvetica;
@@ -70,7 +94,7 @@ a.start:hover {
     -o-transition: all .4s ease-out;
     transition: all .4s ease-out;
 }
-#Layer_1 {
+/* #Layer_1 {
     float:right;
     margin:10px;
-}
+} */
