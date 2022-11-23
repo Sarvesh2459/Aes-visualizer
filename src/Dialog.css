@@ -32,7 +32,9 @@ body {
     font-size: larger;
     font-family: 'helvetica neue';
     border-radius: 12px;
-    background-color: red;
+    color: red;
+    background-color: white;
+    text-shadow: 1.5px 6px 9px red;
 }
 .bacf{
 filter: blur(-4px);

@@ -38,11 +38,13 @@ function MixCol() {
       <Table8  name={final}/>
       </div>
       </div>
-
+      <div  style={{float: "left", width: "10%",height:"10%",marginLeft:"77%",marginRight:"%",marginTop:"3%"}} >
       <Link to={'/addroundkey'} style={{ textDecoration: 'none' }}>
-        <button  style={{backgroundColor: "#0000FF" ,width:"80%",height:"80%"}} className={'button-18'} role="button" >AddRoundKey
+        <button  style={{backgroundColor: "#0000FF" ,width:"100%",height:"100%"}} className={'button-18'} role="button" >AddRoundKey
         </button>
         </Link>
+        </div>
+      
       
       
     </div>

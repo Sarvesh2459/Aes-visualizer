@@ -7,6 +7,8 @@ import Table10 from './Table10';
 import Table16 from './table16';
 import Table17 from './Table17';
 import Table18 from './Table18';
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+import DragHandleIcon from '@mui/icons-material/DragHandle';
 // import {arko,sb1,mat,final} from './Data'
 
 
@@ -28,17 +30,18 @@ function Finally(prop) {
     </div>
   <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',marginTop:"2%"}}>
   
-<<<<<<< HEAD
     <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "28%",zIndex:"1"}} >
-=======
-    <div   style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "28%",zIndex:"1"}} >
->>>>>>> 36a831fcc4859a2a3ab6ea375843f4828499ccba
       <Table16 name={prop.b}/>
     </div>
-    
-    <div className={(flag<=0) ?'fadeOut':'fadeIn'} style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "28%",zIndex:"2"}} >
+    <div className={(flag<=0) ?'fadeOut':'fadeIn'} style={{float: "left",width:"3%",marginRight:"%",marginLeft:"1%",marginTop:"1%"}} >
+      <AddCircleOutlineIcon sx={{fontSize:"60px"}}/>
+      </div>
+    <div className={(flag<=0) ?'fadeOut':'fadeIn'} style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "18%",zIndex:"2",marginLeft:"-1%",marginRight:"-2%"}} >
      {(flag>=1 && flag<=32)?<Table15 name={prop.c}/>: <Table17 name={prop.name}/>}
     </div>
+    <div  className={(flag<=0) ?'fadeOut':'fadeIn'} style={{float: "left",width:"3%",marginRight:"1%",marginLeft:"%",marginTop:"1%"}} >
+      <DragHandleIcon sx={{fontSize:"60px"}}/>
+      </div>
     <div className={(flag<=0) ?'fadeOut':'fadeIn'} style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "28%",zIndex:"2"}} >
       <Table18 name={prop.name}/>
     </div>

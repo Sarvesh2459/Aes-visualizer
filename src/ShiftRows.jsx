@@ -55,11 +55,13 @@ function ShiftRows() {
       </div>
       </div>}
     </div>
-    <Link to={'/mixcol'} style={{ textDecoration: 'none' }}>
-        <button  style={{backgroundColor:"#ED0800",width:"80%",height:"80%"}} className={'button-18'} role="button" >
+        <div  style={{float: "left", width: "10%",height:"10%",marginLeft:"77%",marginRight:"%",marginTop:"3%"}} >
+        <Link to={'/mixcol'} style={{ textDecoration: 'none' }}>
+        <button  style={{backgroundColor:"#ED0800",width:"100%",height:"100%"}} className={'button-18'} role="button" >
         MixColumns
         </button>
         </Link>
+        </div>
     </div>
   );
 }

@@ -21,7 +21,7 @@ useEffect(() => {
     return(
       <div >
         <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-      <h1  style={{color:"rgb(27, 191, 32)",backgroundColor:"black",borderRadius:"16px",marginTop:"4%"}}>Moving the 13th cell to the bottom</h1>
+      <h1  style={{color:"rgb(27, 191, 32)",backgroundColor:"black",borderRadius:"16px",marginTop:"4%",marginLeft:"3%"}}>Moving the 13th cell to the bottom</h1>
       </div>
         <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
         <div className='c'>
@@ -68,7 +68,7 @@ useEffect(() => {
       </div>
       {(flag<=10)?<div className='c'>
       <div className='example-container'>
-        <motion.div animate={{x: (flag<=4 || flag>=8)? 40 : 180 , y:(flag<=6) ? 0:320}} >{key[24]}{key[25]}</motion.div>
+        <motion.div animate={{x: (flag<=4 || flag>=8)? 40 : 180 , y:(flag<=6) ? 0:340}} >{key[24]}{key[25]}</motion.div>
       </div>
       <div className='example-container'>
         <motion.div animate={{x :40,y:10}} >{key[26]}{key[27]}</motion.div>

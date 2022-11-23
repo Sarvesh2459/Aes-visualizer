@@ -192,6 +192,7 @@ for(var i=0;i<9;i++){
 curr = sb(curr);
 curr = sr(curr);
 curr = ark(curr,totalkey.slice(32*(10),32*(10)+32));
+curr = curr.toUpperCase()
 console.log(curr);
     return(
         <>

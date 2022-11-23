@@ -128,11 +128,13 @@ export default function Home() {
     </Timeline>
     </div>}
     {round1>=59 && 
-      <div>
+      <div style={{float: "left", width: "100%",marginRight:"%",height:"60%"}}>
     <Output/>
+    <div  style={{float: "left", width: "13%",height:"15%",marginLeft:"44%",marginTop:"5%"}} >
     <Link to={`/explain`} style={{ textDecoration: 'none' }}>
-            <button className='button-18' style={{background:"#0000FF",width:"150%",height:"150%"}}>Step Visualization</button>
+            <button className='button-18' style={{background:"#0000FF",width:"100%",height:"100%"}}>Step Visualization</button>
     </Link>
+        </div>
       </div>}
     </div>
   );

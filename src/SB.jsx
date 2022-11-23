@@ -37,12 +37,16 @@ function SB() {
     <div className={(flag<=0) ?'fadeOut':'fadeIn'} style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "28%",zIndex:"2"}} >
       <Table name={sb1}/>
     </div>
-    <Link to={'/shiftrows'} style={{ textDecoration: 'none' }}>
-        <button  style={{backgroundColor: "#0000FF",width:"80%",height:"80%"}} className={'button-18'} role="button" >
+
+    
+</div>
+<div  style={{float: "left", width: "10%",height:"10%",marginLeft:"77%",marginRight:"%",marginTop:"3%"}} >
+<Link to={'/shiftrows'} style={{ textDecoration: 'none' }}>
+        <button  style={{backgroundColor: "#0000FF",width:"100%",height:"100%"}} className={'button-18'} role="button" >
         ShiftRows
         </button>
    </Link>
-</div> 
+        </div> 
 </div>
   );
 }
