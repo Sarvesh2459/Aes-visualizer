@@ -43,9 +43,9 @@ function AddRoundKey() {
       </div>
       </div>
       <div  style={{float: "left", width: "12%",height:"10%",marginLeft:"77%",marginRight:"0%",marginTop:"3%"}} >
-      <Link to={`/keyexpansion`} style={{ textDecoration: 'none' }}>
+      <Link to={`/sb`} style={{ textDecoration: 'none' }}>
         <button style={{width:"100%",height:"100%"}} className={'grad'}   >
-        Key Expansion
+        SubBytes
         </button>
         </Link>
       </div>
