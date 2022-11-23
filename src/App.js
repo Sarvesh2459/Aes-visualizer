@@ -14,11 +14,11 @@ import AddRoundKey from './AddRoundKey';
 
 function App() {
   const [plaintext,setplaintext]=useState("7b75767b7a123eabc8957b75767a123e")
-  const [key,setkey]=useState("12345678901234567890123456789012")
-  const [arko,setarko]=useState("")
-  const [sb1,setsb1]=useState("")
-  const [mat,setmat]=useState("")
-  const [final,setfinal]=useState("")
+  const [key,setkey]=useState("78797656453219674536897634567834")
+  const [arko,setarko]=useState("030c002d3f2027cc8da3f203422c6a0a")
+  const [sb1,setsb1]=useState("7bfe63d875b7cc4b5d0a897b2c710267")
+  const [mat,setmat]=useState("7bb78967750a02d85d71634b2cfecc7b")
+  const [final,setfinal]=useState("dae96c7d2ebf083c01513763f6ffdcb0")
   return (
     <div >
     <UserContext.Provider value={{plaintext,setplaintext,key,setkey,arko,setarko,sb1,setsb1,mat,setmat,final,setfinal}}>
