@@ -1,17 +1,11 @@
-import * as React from 'react';
-import { UserContext } from './UserContext';
+const key=  "00000000000000000000000000000000";
+const plain="00000000000000000000000000000000";
 
-
-function Output() {
-    const {plaintext,key}=React.useContext(UserContext)
-   
-// const plain="00000000000000000000000000000000";
-
-function ark(plaintext,key){
+function ark(plain,key){
     
     var arko1='';
     for(var i=0;i<16;i++){
-        arko1 = arko1.concat(decimalToHex(parseInt(key.slice(2*i,2*i+2),16)^parseInt(plaintext.slice(2*i,2*i+2),16)))
+        arko1 = arko1.concat(decimalToHex(parseInt(key.slice(2*i,2*i+2),16)^parseInt(plain.slice(2*i,2*i+2),16)))
     }
     return arko1;
 }
@@ -27,8 +21,8 @@ function decimalToHex(d, padding) {
     return hex;
   }
 
-function sb(plaintext){
-    var Sbox = [99,124,119,123,242,107,111,197,48,1,103,43,254,215,171,
+function sb(plain){
+    var Sbox = new Array(99,124,119,123,242,107,111,197,48,1,103,43,254,215,171,
         118,202,130,201,125,250,89,71,240,173,212,162,175,156,164,114,192,183,253,
         147,38,54,63,247,204,52,165,229,241,113,216,49,21,4,199,35,195,24,150,5,154,
         7,18,128,226,235,39,178,117,9,131,44,26,27,110,90,160,82,59,214,179,41,227,
@@ -40,17 +34,21 @@ function sb(plaintext){
         78,169,108,86,244,234,101,122,174,8,186,120,37,46,28,166,180,198,232,221,
         116,31,75,189,139,138,112,62,181,102,72,3,246,14,97,53,87,185,134,193,29,
         158,225,248,152,17,105,217,142,148,155,30,135,233,206,85,40,223,140,161,
-        137,13,191,230,66,104,65,153,45,15,176,84,187,22];
+        137,13,191,230,66,104,65,153,45,15,176,84,187,22);
+    
+   
+
    var sb2=''
     for (var i=0;i<16;i++){
-     sb2 = sb2.concat(decimalToHex(Sbox[parseInt(plaintext.slice(2*i,2*i+2),16)]));
+     sb2 = sb2.concat(decimalToHex(Sbox[parseInt(plain.slice(2*i,2*i+2),16)]));
     };
     return sb2;
 }
-function sr(plaintext){
-        var state = [];
+
+function sr(plain){
+        var state = new Array();
         for(var i=0;i<16;i++){
-        state.push(plaintext.slice(2*i,2*i+2))
+        state.push(plain.slice(2*i,2*i+2))
         }
 
         [state[1],state[5],state[9],state[13]] = [state[5],state[9],state[13],state[1]];
@@ -63,6 +61,8 @@ function sr(plaintext){
 
         return mat1;
 }
+
+
 function aes_mul( a, b )	{
     var res = 0;
     while( a > 0 )	{
@@ -71,7 +71,7 @@ function aes_mul( a, b )	{
        a >>>= 1;			// shift a to get next higher-order bit
        b <<= 1;			// shift multiplier also
     }
-    // now reduce it modulo x*8 + x4 + x*3 + x + 1
+    // now reduce it modulo x**8 + x**4 + x**3 + x + 1
     var hbit = 0x10000;		// bit to test if we need to take action
     var modulus = 0x11b00;	// modulus - XOR by this to change value
     while( hbit >= 0x100 )	{
@@ -84,15 +84,18 @@ function aes_mul( a, b )	{
     }
     return res;
   }
-  function mc(plaintext){
+
+  function mc(plain){
     var final1='';
     const sb= "02030101010203010101020303010102";
     for(var j=0;j<4;j++){
         for(var i=0;i<4;i++)
-            final1 = final1.concat(decimalToHex((aes_mul(parseInt(plaintext.slice(8*j,8*j+2),16),parseInt(sb.slice(8*i,8*i+2),16)))^(aes_mul(parseInt(plaintext.slice(8*j+2,8*j+4),16),parseInt(sb.slice(8*i+2,8*i+4),16)))^(aes_mul(parseInt(plaintext.slice(8*j+6,8*j+8),16),parseInt(sb.slice(8*i+6,8*i+8),16)))^(aes_mul(parseInt(plaintext.slice(8*j+4,8*j+6),16),parseInt(sb.slice(8*i+4,8*i+6),16)))));
+            final1 = final1.concat(decimalToHex((aes_mul(parseInt(plain.slice(8*j,8*j+2),16),parseInt(sb.slice(8*i,8*i+2),16)))^(aes_mul(parseInt(plain.slice(8*j+2,8*j+4),16),parseInt(sb.slice(8*i+2,8*i+4),16)))^(aes_mul(parseInt(plain.slice(8*j+6,8*j+8),16),parseInt(sb.slice(8*i+6,8*i+8),16)))^(aes_mul(parseInt(plain.slice(8*j+4,8*j+6),16),parseInt(sb.slice(8*i+4,8*i+6),16)))));
     }
     return final1;
   }
+
+  
 function rot_word(temp){
     [temp[0],temp[1],temp[2],temp[3]] = [temp[1],temp[2],temp[3],temp[0]];
     return temp
@@ -141,7 +144,7 @@ function KeyExpansion(k) {
       0xfa, 0xef, 0xc5, 0x91, 0x39, 0x72, 0xe4, 0xd3, 0xbd, 0x61, 0xc2,
       0x9f, 0x25, 0x4a, 0x94, 0x33, 0x66, 0xcc, 0x83, 0x1d, 0x3a, 0x74,
       0xe8, 0xcb]
-      var key = [];
+      var key = new Array();
       for(var i=0;i<16;i++){
       key.push(k.slice(2*i,2*i+2))
       }
@@ -151,7 +154,7 @@ function KeyExpansion(k) {
     var rcon_it = 1;
     const exp_key_size = nb * (nr + 1) * 4;
     var w = [];
-    for( i=0;i<nk*4;i++){
+    for(var i=0;i<nk*4;i++){
       w[i] = parseInt(key[i],16)
     }
     var temp = [0,0,0,0];
@@ -172,17 +175,18 @@ function KeyExpansion(k) {
           for (var j=0;j<4 ;j++){ w[i+j] = w[i-offset+j] ^ temp[j]}
           i += 4
       }
-      var pre = [];
-      for(i=0;i<exp_key_size;i++){
+      var pre = new Array();
+      for(var i=0;i<exp_key_size;i++){
             pre.push(decimalToHex(w[i]))
       }
       var final = '';
       final = pre.join('');
       return final;
 }
+
 var totalkey = KeyExpansion(key);
 // console.log(totalkey);
-var curr = ark(plaintext,key);
+var curr = ark(plain,key);
 for(var i=0;i<9;i++){
     curr = sb(curr);
     curr = sr(curr);
@@ -192,15 +196,4 @@ for(var i=0;i<9;i++){
 curr = sb(curr);
 curr = sr(curr);
 curr = ark(curr,totalkey.slice(32*(10),32*(10)+32));
-curr = curr.toUpperCase()
 console.log(curr);
-    return(
-        <>
-        <div style={{display: 'flex',marginLeft:'11%',  justifyContent:'center', alignItems:'center'}}>
-        <h1  style={{color:"white",borderRadius:"16px",marginTop:"8%"}}>plaintext: {plaintext}</h1>
-        <h1  style={{color:"white",borderRadius:"16px",marginTop:"8%"}}>Encrypted text: {curr}</h1>
-      </div>
-        </>
-    );
-}
-export default Output

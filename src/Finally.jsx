@@ -3,7 +3,7 @@ import './App.css';
 import { useState, useEffect } from "react";
 import Table11 from './Table11';
 import Table15 from './Table15';
-import Table10 from './Table10';
+// import Table10 from './Table10';
 import Table16 from './table16';
 import Table17 from './Table17';
 import Table18 from './Table18';

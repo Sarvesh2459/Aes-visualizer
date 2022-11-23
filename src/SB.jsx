@@ -42,7 +42,7 @@ function SB() {
 </div>
 <div  style={{float: "left", width: "10%",height:"10%",marginLeft:"77%",marginRight:"%",marginTop:"3%"}} >
 <Link to={'/shiftrows'} style={{ textDecoration: 'none' }}>
-        <button  style={{backgroundColor: "#0000FF",width:"100%",height:"100%"}} className={'button-18'} role="button" >
+        <button  style={{backgroundColor: "#0000FF",width:"100%",height:"100%"}} className={'button-18'}   >
         ShiftRows
         </button>
    </Link>

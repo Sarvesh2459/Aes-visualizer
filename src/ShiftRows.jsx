@@ -13,7 +13,7 @@ import {UserContext} from './UserContext'
 
 function ShiftRows() {
   const [flag, setflag]=useState(0)
-  const {plaintext,setplaintext,key,setkey,arko,setarko,sb1,setsb1,mat,setmat,final,setfinal}=React.useContext(UserContext)
+  const {sb1,mat}=React.useContext(UserContext)
   useEffect(() => {
     const interval = setInterval(() => {
       setflag((prevflag) => prevflag + 1);
@@ -57,7 +57,7 @@ function ShiftRows() {
     </div>
         {(flag>=1)&& <div  style={{float: "left", width: "10%",height:"10%",marginLeft:"77%",marginRight:"%",marginTop:"3%"}} >
         <Link to={'/mixcol'} style={{ textDecoration: 'none' }}>
-        <button  style={{backgroundColor:"#ED0800",width:"100%",height:"100%"}} className={'button-18'} role="button" >
+        <button  style={{backgroundColor:"#ED0800",width:"100%",height:"100%"}} className={'button-18'}   >
         MixColumns
         </button>
         </Link>

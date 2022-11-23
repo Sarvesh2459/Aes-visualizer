@@ -12,9 +12,6 @@ function Table8(prop) {
 
     return () => clearInterval(interval,48000);
   }, []);
-  const start=()=>{
-    setflag(0)
-  }
   return (
    
       <table  className='tablekliye' style={{backgroundColor:"black",color:"white"}}>

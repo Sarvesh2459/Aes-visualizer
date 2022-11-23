@@ -1,17 +1,17 @@
 import './App.css';
 import * as React from 'react';
-import { useEffect } from 'react';
+
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import DragHandleIcon from '@mui/icons-material/DragHandle';
-import Table6 from './Table6';
-import Table7 from './Table7';
+
+
 import Table10 from './Table10';
 import Table11 from './Table11';
 import {UserContext} from './UserContext'
 import {Link} from 'react-router-dom'
 
 function AddRoundKey() {
-  const {plaintext,setplaintext,key,setkey,arko,setarko,sb1,setsb1,mat,setmat,final,setfinal}=React.useContext(UserContext)
+  const {plaintext,key,arko}=React.useContext(UserContext)
 //   useEffect(() => {
 //     setarko(JSON.parse(window.sessionStorage.getItem("arko")));
 //   }, []);
@@ -44,7 +44,7 @@ function AddRoundKey() {
       </div>
       <div  style={{float: "left", width: "12%",height:"10%",marginLeft:"77%",marginRight:"0%",marginTop:"3%"}} >
       <Link to={`/keyexpansion`} style={{ textDecoration: 'none' }}>
-        <button style={{width:"100%",height:"100%"}} className={'grad'} role="button" >
+        <button style={{width:"100%",height:"100%"}} className={'grad'}   >
         Key Expansion
         </button>
         </Link>
