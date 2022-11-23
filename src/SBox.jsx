@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Table13 from './Table13';
 import Table14 from './Table14';
 import Table15 from './Table15';
+import { height } from '@mui/system';
 // import {arko,sb1,mat,final} from './Data'
 
 
@@ -18,11 +19,11 @@ function SBox(prop) {
     return () => clearInterval(interval,48000);
   }, []);
   return (
-  <div className='Backgd'>
-    <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+  <div>
+    <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',height:"4%",width:"100%"}}>
     <h1  style={{color:"rgb(27, 191, 32)",backgroundColor:"black",borderRadius:"16px",marginTop:"4%"}}>S-box Substitution</h1>
     </div>
-  <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',marginTop:"2%"}}>
+  <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',marginTop:"2%",height:"70%"}}>
   
     <div  className={(flag<=0) ?'fadeIn':'fadeOut1'} style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "28%",zIndex:"1"}} >
       <Table13 name={prop.name}/>

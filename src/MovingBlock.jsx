@@ -19,80 +19,84 @@ useEffect(() => {
 
     const {key}=React.useContext(UserContext)
     return(
-        <div>
+      <div >
+        <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+      <h1  style={{color:"rgb(27, 191, 32)",backgroundColor:"black",borderRadius:"16px",marginTop:"4%"}}>Moving the 13th cell to the bottom</h1>
+      </div>
+        <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
         <div className='c'>
       <div className='example-container'>
-        <motion.div animate={{x:10}} style={{color:'black'}}>{key[0]}{key[1]}</motion.div>
+        <motion.div animate={{x:10}}>{key[0]}{key[1]}</motion.div>
       </div>
       <div className='example-container'>
-        <motion.div animate={{x:10,y:10}} style={{color:'black'}}>{key[2]}{key[3]}</motion.div>
+        <motion.div animate={{x:10,y:10}} >{key[2]}{key[3]}</motion.div>
       </div>
       <div className='example-container'>
-        <motion.div animate={{x:10,y:20}} style={{color:'black'}}>{key[4]}{key[5]}</motion.div>
+        <motion.div animate={{x:10,y:20}} >{key[4]}{key[5]}</motion.div>
       </div>
       <div className='example-container'>
-        <motion.div animate={{x:10,y:30}} style={{color:'black'}} >{key[6]}{key[7]}</motion.div>
-      </div>
-      </div>
-        <div className='c'>
-      <div className='example-container'>
-        <motion.div animate={{x:20}} style={{color:'black'}} >{key[8]}{key[9]}</motion.div>
-      </div>
-      <div className='example-container'>
-        <motion.div animate={{x:20,y:10}} style={{color:'black'}}>{key[10]}{key[11]}</motion.div>
-      </div>
-      <div className='example-container'>
-        <motion.div animate={{x:20,y:20}} style={{color:'black'}}>{key[12]}{key[13]}</motion.div>
-      </div>
-      <div className='example-container'>
-        <motion.div animate={{x:20,y:30}} style={{color:'black'}}>{key[14]}{key[15]}</motion.div>
+        <motion.div animate={{x:10,y:30}}  >{key[6]}{key[7]}</motion.div>
       </div>
       </div>
         <div className='c'>
       <div className='example-container'>
-        <motion.div animate={{x:30}} style={{color:'black'}}>{key[16]}{key[17]}</motion.div>
+        <motion.div animate={{x:20}}  >{key[8]}{key[9]}</motion.div>
       </div>
       <div className='example-container'>
-        <motion.div animate={{x:30,y:10}} style={{color:'black'}}>{key[18]}{key[19]}</motion.div>
+        <motion.div animate={{x:20,y:10}} >{key[10]}{key[11]}</motion.div>
       </div>
       <div className='example-container'>
-        <motion.div animate={{x:30,y:20}} style={{color:'black'}}>{key[20]}{key[21]}</motion.div>
+        <motion.div animate={{x:20,y:20}} >{key[12]}{key[13]}</motion.div>
       </div>
       <div className='example-container'>
-        <motion.div animate={{x:30,y:30}} style={{color:'black'}}>{key[22]}{key[23]}</motion.div>
+        <motion.div animate={{x:20,y:30}} >{key[14]}{key[15]}</motion.div>
       </div>
       </div>
-      
+        <div className='c'>
+      <div className='example-container'>
+        <motion.div animate={{x:30}} >{key[16]}{key[17]}</motion.div>
+      </div>
+      <div className='example-container'>
+        <motion.div animate={{x:30,y:10}} >{key[18]}{key[19]}</motion.div>
+      </div>
+      <div className='example-container'>
+        <motion.div animate={{x:30,y:20}} >{key[20]}{key[21]}</motion.div>
+      </div>
+      <div className='example-container'>
+        <motion.div animate={{x:30,y:30}} >{key[22]}{key[23]}</motion.div>
+      </div>
+      </div>
       {(flag<=10)?<div className='c'>
       <div className='example-container'>
-        <motion.div animate={{x: (flag<=4 || flag>=8)? 40 : 290 , y:(flag<=6) ? 0:440}} style={{color:'black'}}>{key[24]}{key[25]}</motion.div>
+        <motion.div animate={{x: (flag<=4 || flag>=8)? 40 : 180 , y:(flag<=6) ? 0:320}} >{key[24]}{key[25]}</motion.div>
       </div>
       <div className='example-container'>
-        <motion.div animate={{x :40,y:10}} style={{color:'black'}}>{key[26]}{key[27]}</motion.div>
+        <motion.div animate={{x :40,y:10}} >{key[26]}{key[27]}</motion.div>
       </div>
       <div className='example-container'>
-        <motion.div animate={{x :40,y:20}} style={{color:'black'}}>{key[28]}{key[29]}</motion.div>
+        <motion.div animate={{x :40,y:20}} >{key[28]}{key[29]}</motion.div>
       </div>
       <div className='example-container'>
-        <motion.div animate={{x :40,y:30}} style={{color:'black'}}>{key[30]}{key[31]}</motion.div>
+        <motion.div animate={{x :40,y:30}} >{key[30]}{key[31]}</motion.div>
       </div>
       </div>:
       <div className='c'>
       <div className='example-container'>
-        <motion.div animate={{x: 40 , y:0}} style={{color:'black'}} >{key[26]}{key[27]}</motion.div>
+        <motion.div animate={{x: 40 , y:0}}  >{key[26]}{key[27]}</motion.div>
       </div>
       <div className='example-container'>
-        <motion.div animate={{x :40,y:10}} style={{color:'black'}}>{key[28]}{key[29]}</motion.div>
+        <motion.div animate={{x :40,y:10}} >{key[28]}{key[29]}</motion.div>
       </div>
       <div className='example-container'>
-        <motion.div animate={{x :40,y:20}} style={{color:'black'}}>{key[30]}{key[31]}</motion.div>
+        <motion.div animate={{x :40,y:20}} >{key[30]}{key[31]}</motion.div>
       </div>
       <div className='example-container'>
-        <motion.div animate={{x :40,y:30}} style={{color:'black'}}>{key[24]}{key[25]}</motion.div>
+        <motion.div animate={{x :40,y:30}} >{key[24]}{key[25]}</motion.div>
       </div>
       </div>
       }
 
+      </div>
       </div>
     );
 }

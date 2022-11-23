@@ -21,13 +21,13 @@ function Finally(prop) {
     return () => clearInterval(interval,48000);
   }, []);
   return (
-  <div className='Backgd'>
+  <div>
     <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
     <h1  style={{color:"rgb(27, 191, 32)",backgroundColor:"black",borderRadius:"16px",marginTop:"4%"}}>Round 1 Key formation</h1>
     </div>
   <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',marginTop:"2%"}}>
   
-    <div  className={(flag<=0) ?'fadeIn':'fadeOut1'} style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "28%",zIndex:"1"}} >
+    <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "28%",zIndex:"1"}} >
       <Table16 name={prop.b}/>
     </div>
     

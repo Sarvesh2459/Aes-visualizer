@@ -19,22 +19,15 @@ function RoundXor(prop) {
     return () => clearInterval(interval,48000);
   }, []);
   return (
-  <div className='Backgd'>
-    <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+  <div>
+    <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',height:"4%"}}>
     <h1  style={{color:"rgb(27, 191, 32)",backgroundColor:"black",borderRadius:"16px",marginTop:"4%"}}>XOR</h1>
     </div>
-  <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',marginTop:"2%"}}>
+  <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',marginTop:"2%",height:"70%"}}>
   
     <div  className={(flag<=0) ?'fadeIn':'fadeOut1'} style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "28%",zIndex:"1"}} >
       <Table14 name={prop.name}/>
     </div>
-    {/* <div  style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "15%"}} >
-    <table style={{margin:"0%",width:"65%",height:"100%",border:"1px"}}>
-        <tr style={{margin:"0%"}}>
-          <th className='garvi'>{"S-box"}</th>
-        </tr>
-    </table>
-    </div> */}
     <div className={(flag<=0) ?'fadeOut':'fadeIn'} style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "28%",zIndex:"2"}} >
       <Table13 name={arr}/>
     </div>

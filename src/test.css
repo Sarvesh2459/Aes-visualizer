@@ -2,6 +2,11 @@
     background: white;
     width: 70px;
     height: 70px;
+    /* color:'black',display: 'flex',  justifyContent:'center', alignItems:'center' */
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .c{
     display: inline-block;

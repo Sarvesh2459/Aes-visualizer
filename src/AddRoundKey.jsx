@@ -42,11 +42,14 @@ function AddRoundKey() {
       <Table10  name={arko}/>
       </div>
       </div>
+      <div  style={{float: "right", width: "26%",height:"26%",marginLeft:"0%",marginRight:"0%",marginTop:"3%"}} >
       <Link to={`/keyexpansion`} style={{ textDecoration: 'none' }}>
-        <button style={{width:"80%",height:"80%"}} className={'grad'} role="button" >
+        <button style={{width:"50%",height:"50%"}} className={'grad'} role="button" >
         Key Expansion
         </button>
         </Link>
+      </div>
+      
     </div>
     
   );

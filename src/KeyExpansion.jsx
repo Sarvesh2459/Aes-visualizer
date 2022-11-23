@@ -48,7 +48,7 @@ function decimalToHex(d, padding) {
   return hex;
 }
 
-const kkey=  "12345678123456781234567812345678";
+const kkey=  "78797656453219674536897634567834";
 function KeyExpansion(k) {
   const rcon = [0x8d, 0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80, 0x1b, 0x36,
     0x6c, 0xd8, 0xab, 0x4d, 0x9a, 0x2f, 0x5e, 0xbc, 0x63, 0xc6, 0x97,
@@ -132,17 +132,18 @@ useEffect(() => {
 
   return (
     <div className="Backgd">
-      <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-        <h1  style={{color:"rgb(27, 191, 32)",backgroundColor:"black",borderRadius:"16px",marginTop:"3%"}}>KeyExpansion</h1>
+      <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', width: "90%",marginLeft:"6%",height:"10%",marginTop:"%"}}>
+        <h1  style={{color:"rgb(27, 191, 32)",width:"17%",backgroundColor:"black",borderRadius:"16px",marginTop:"%"}}>KeyExpansion</h1>
       </div>
+      <div  style={{float: "left", width: "100%",height:"30%",marginLeft:"%",marginRight:"%",marginTop:"%"}} >
       {(flag<=14) && <MovingBlock/>}
       {(flag>15 && flag<=39) && <SBox name={key.slice(24,32)}/>}
       {(flag>=40 && flag<=64) && <RoundXor name={key.slice(24,32)}/>}
       {(flag>=65) && <Finally name={totalkey} b={key} c={key.slice(24,32)}/>}
-
-      <div  style={{float: "left", width: "8%",height:"8%",marginLeft:"13%",marginRight:"32%",marginTop:"3%"}} >
+      </div>
+      <div  style={{float: "left", width: "10%",height:"10%",marginLeft:"77%",marginRight:"%",marginTop:"21%"}} >
             <Link to={`/home`} style={{ textDecoration: 'none' }}>
-            <button className='button-18' style={{background:"#ED0800",width:"150%",height:"150%"}}>Encrypt text</button>
+            <button className='button-18' style={{background:"#ED0800",width:"100%",height:"100%"}}>Encrypt text</button>
             </Link>
         </div>
 
