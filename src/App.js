@@ -2,7 +2,7 @@ import * as React from 'react';
 import './App.css';
 import Home from './Home';
 import KeyExpansion from './KeyExpansion';
-import Input ,{plaintext,key} from './Input';
+import Input from './Input';
 import SB from './SB';
 import ShiftRows from './ShiftRows';
 import MixCol from './MixCol';

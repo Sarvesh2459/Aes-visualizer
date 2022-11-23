@@ -5,9 +5,6 @@ export default function Dialogg(prop) {
   const [open, setOpen] = React.useState(prop.val);
   
 
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
 
   const handleClose = () => {
     setOpen(false);

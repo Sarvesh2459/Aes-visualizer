@@ -3,8 +3,8 @@ import './App.css';
 import { useState, useEffect } from "react";
 import Table13 from './Table13';
 import Table14 from './Table14';
-import Table15 from './Table15';
-import { height } from '@mui/system';
+// import Table15 from './Table15';
+// import { height } from '@mui/system';
 // import {arko,sb1,mat,final} from './Data'
 
 

@@ -8,8 +8,8 @@ import {UserContext} from './UserContext'
 export default function MovingBlock()
 {
 const [flag, setflag]=useState(0)
-const [x , setx] = React.useState(true);
-const [y , sety] = React.useState(true);
+// const [x , setx] = React.useState(true);
+// const [y , sety] = React.useState(true);
 useEffect(() => {
     const interval = setInterval(() => {
       setflag((prevflag) => prevflag + 1);
