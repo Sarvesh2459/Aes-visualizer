@@ -1,19 +1,19 @@
 import './App.css';
 import * as React from 'react';
 import Home from './Home';
-import { useParams } from 'react-router-dom';
 import Table from './Table';
 import CloseIcon from '@mui/icons-material/Close';
 import DragHandleIcon from '@mui/icons-material/DragHandle';
 import Table6 from './Table6';
 import Table7 from './Table7';
 import Table8 from './Table8';
+import {Link} from 'react-router-dom'
 // import {arko,sb1,mat,final} from './Data';
 import {UserContext} from './UserContext'
 
 function MixCol() {
-  const { data } = useParams();
-  const {plaintext,setplaintext,key,setkey,arko,setarko,sb1,setsb1,mat,setmat,final,setfinal}=React.useContext(UserContext)
+ 
+  const {mat,final}=React.useContext(UserContext)
   const sb= "02030101010203010101020303010102"; //const
 
   return (
@@ -38,6 +38,12 @@ function MixCol() {
       <Table8  name={final}/>
       </div>
       </div>
+
+      <Link to={'/addroundkey'} style={{ textDecoration: 'none' }}>
+        <button  style={{backgroundColor: "#0000FF" ,width:"80%",height:"80%"}} className={'button-18'} role="button" >AddRoundKey
+        </button>
+        </Link>
+      
       
     </div>
     

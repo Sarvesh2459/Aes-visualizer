@@ -5,7 +5,7 @@ import { UserContext } from './UserContext';
 import Dialog from './Dialog';
 
    export default function Input(){
-    const {plaintext,setplaintext,key,setkey,arko,setarko,sb1,setsb1,mat,setmat,final,setfinal}=React.useContext(UserContext)
+    const {setplaintext,setkey}=React.useContext(UserContext)
     return(
         <div className='Backgd'>
             <Dialog val="true"/>

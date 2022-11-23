@@ -7,6 +7,7 @@ import Table3 from './Table3';
 import Table4 from './Table4';
 import Table5 from './Table5';
 import EastIcon from '@mui/icons-material/East';
+import {Link} from 'react-router-dom'
 // import {arko,sb1,mat,final} from './Data'
 import {UserContext} from './UserContext'
 
@@ -54,6 +55,11 @@ function ShiftRows() {
       </div>
       </div>}
     </div>
+    <Link to={'/mixcol'} style={{ textDecoration: 'none' }}>
+        <button  style={{backgroundColor:"#ED0800",width:"80%",height:"80%"}} className={'button-18'} role="button" >
+        MixColumns
+        </button>
+        </Link>
     </div>
   );
 }

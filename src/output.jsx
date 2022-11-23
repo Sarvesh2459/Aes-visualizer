@@ -3,7 +3,7 @@ import { UserContext } from './UserContext';
 
 
 function Output() {
-    const {plaintext,setplaintext,key,setkey,arko,setarko,sb1,setsb1,mat,setmat,final,setfinal}=React.useContext(UserContext)
+    const {plaintext,key}=React.useContext(UserContext)
    
 // const plain="00000000000000000000000000000000";
 

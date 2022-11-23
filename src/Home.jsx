@@ -9,6 +9,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import './App.css'
 import Output from './output';
+// import {Link} from 'react-router-dom'
 
 export default function Home() {
   const [round1, setround1]=useState(1)  
@@ -126,7 +127,13 @@ export default function Home() {
       
     </Timeline>
     </div>}
-    {round1>=59 && <Output/>}
+    {round1>=59 && 
+      <div>
+    <Output/>
+    <Link to={`/explain`} style={{ textDecoration: 'none' }}>
+            <button className='button-18' style={{background:"#0000FF",width:"150%",height:"150%"}}>Step Visualization</button>
+    </Link>
+      </div>}
     </div>
   );
 }

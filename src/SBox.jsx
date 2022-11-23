@@ -1,15 +1,15 @@
 import * as React from 'react';
 import './App.css';
 import { useState, useEffect } from "react";
-import Table from './Table';
+import Table13 from './Table13';
+import Table14 from './Table14';
+import Table15 from './Table15';
 // import {arko,sb1,mat,final} from './Data'
-import {UserContext} from './UserContext'
-import {Link} from 'react-router-dom'
 
 
-function SB() {
+
+function SBox(prop) {
   const [flag, setflag]=useState(0)
-  const {arko,sb1}=React.useContext(UserContext)
   useEffect(() => {
     const interval = setInterval(() => {
       setflag((prevflag) => prevflag + 1);
@@ -25,7 +25,7 @@ function SB() {
   <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',marginTop:"2%"}}>
   
     <div  className={(flag<=0) ?'fadeIn':'fadeOut1'} style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "28%",zIndex:"1"}} >
-      <Table  name={arko}/>
+      <Table13 name={prop.name}/>
     </div>
     <div  style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "15%"}} >
     <table style={{margin:"0%",width:"65%",height:"100%",border:"1px"}}>
@@ -35,17 +35,12 @@ function SB() {
     </table>
     </div>
     <div className={(flag<=0) ?'fadeOut':'fadeIn'} style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "28%",zIndex:"2"}} >
-      <Table name={sb1}/>
+      <Table14 name={prop.name}/>
     </div>
-    <Link to={'/shiftrows'} style={{ textDecoration: 'none' }}>
-        <button  style={{backgroundColor: "#0000FF",width:"80%",height:"80%"}} className={'button-18'} role="button" >
-        ShiftRows
-        </button>
-   </Link>
 </div> 
 </div>
   );
 }
-export default SB;
+export default SBox;
 
 

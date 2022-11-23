@@ -8,6 +8,7 @@ import Table7 from './Table7';
 import Table10 from './Table10';
 import Table11 from './Table11';
 import {UserContext} from './UserContext'
+import {Link} from 'react-router-dom'
 
 function AddRoundKey() {
   const {plaintext,setplaintext,key,setkey,arko,setarko,sb1,setsb1,mat,setmat,final,setfinal}=React.useContext(UserContext)
@@ -41,7 +42,11 @@ function AddRoundKey() {
       <Table10  name={arko}/>
       </div>
       </div>
-      
+      <Link to={`/keyexpansion`} style={{ textDecoration: 'none' }}>
+        <button style={{width:"80%",height:"80%"}} className={'grad'} role="button" >
+        Key Expansion
+        </button>
+        </Link>
     </div>
     
   );
