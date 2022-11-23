@@ -31,7 +31,7 @@ function Finally(prop) {
   <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',marginTop:"2%"}}>
   
     <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "28%",zIndex:"1"}} >
-      <Table16 name={prop.b}/>
+      <Table11 name={prop.b}/>
     </div>
     <div className={(flag<=0) ?'fadeOut':'fadeIn'} style={{float: "left",width:"3%",marginRight:"%",marginLeft:"1%",marginTop:"1%"}} >
       <AddCircleOutlineIcon sx={{fontSize:"60px"}}/>

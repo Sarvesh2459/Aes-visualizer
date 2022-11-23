@@ -15,7 +15,7 @@ function Table17(prop) {
       }, []);
   return (
     <>
-      {(flag>=33 && flag<=40)&&<table >
+      {(flag>=35 && flag<=40)&&<table >
         
         <tr>
           <th style={{color:"white"}}>{arr[0]}{arr[1]}</th>
@@ -32,7 +32,7 @@ function Table17(prop) {
         
       </table>}
       
-      {(flag>=41 && flag<=48)&&<table >
+      {(flag>=43 && flag<=48)&&<table >
         
         <tr>
           <th style={{color:"rgb(27, 191, 32)"}} >{arr[8]}{arr[9]}</th>
@@ -49,7 +49,7 @@ function Table17(prop) {
         
       </table>}
 
-      {(flag>=49)&&<table >
+      {(flag>=51)&&<table >
         
         <tr>
           <th style={{color:"white"}}>{arr[16]}{arr[17]}</th>

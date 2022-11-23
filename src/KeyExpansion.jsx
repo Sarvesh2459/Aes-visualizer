@@ -114,7 +114,7 @@ function KeyExpansion(k) {
     return final1;
 }
 
-var totalkey = (KeyExpansion(key)).slice(0,32);
+var totalkey = (KeyExpansion(key)).slice(32,64);
 console.log(totalkey)
 
 
