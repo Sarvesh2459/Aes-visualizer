@@ -6,6 +6,7 @@ import Table15 from './Table15';
 import Table10 from './Table10';
 import Table16 from './table16';
 import Table17 from './Table17';
+import Table18 from './Table18';
 // import {arko,sb1,mat,final} from './Data'
 
 
@@ -27,7 +28,7 @@ function Finally(prop) {
     </div>
   <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',marginTop:"2%"}}>
   
-    <div  className={(flag<=0) ?'fadeIn':'fadeOut1'} style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "28%",zIndex:"1"}} >
+    <div   style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "28%",zIndex:"1"}} >
       <Table16 name={prop.b}/>
     </div>
     
@@ -35,7 +36,7 @@ function Finally(prop) {
      {(flag>=1 && flag<=32)?<Table15 name={prop.c}/>: <Table17 name={prop.name}/>}
     </div>
     <div className={(flag<=0) ?'fadeOut':'fadeIn'} style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "28%",zIndex:"2"}} >
-      <Table10 name={prop.name}/>
+      <Table18 name={prop.name}/>
     </div>
 </div> 
 </div>

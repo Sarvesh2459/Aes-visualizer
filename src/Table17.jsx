@@ -18,16 +18,16 @@ function Table17(prop) {
       {(flag>=33 && flag<=40)&&<table >
         
         <tr>
-          <th>{arr[0]}{arr[1]}</th>
+          <th style={{color:"white"}}>{arr[0]}{arr[1]}</th>
         </tr>
         <tr>
-          <th>{arr[2]}{arr[3]}</th>
+          <th style={{color:"white"}}>{arr[2]}{arr[3]}</th>
         </tr>
         <tr>
-          <th>{arr[4]}{arr[5]}</th>
+          <th style={{color:"white"}}>{arr[4]}{arr[5]}</th>
         </tr>
         <tr>
-          <th>{arr[6]}{arr[7]}</th>
+          <th style={{color:"white"}}>{arr[6]}{arr[7]}</th>
         </tr>     
         
       </table>}
@@ -35,16 +35,16 @@ function Table17(prop) {
       {(flag>=41 && flag<=48)&&<table >
         
         <tr>
-          <th>{arr[8]}{arr[9]}</th>
+          <th style={{color:"red"}} >{arr[8]}{arr[9]}</th>
         </tr>
         <tr>
-          <th>{arr[10]}{arr[11]}</th>
+          <th style={{color:"red"}} >{arr[10]}{arr[11]}</th>
         </tr>
         <tr>
-          <th>{arr[12]}{arr[13]}</th>
+          <th style={{color:"red"}} >{arr[12]}{arr[13]}</th>
         </tr>
         <tr>
-          <th>{arr[14]}{arr[15]}</th>
+          <th style={{color:"red"}} >{arr[14]}{arr[15]}</th>
         </tr>     
         
       </table>}
@@ -52,16 +52,16 @@ function Table17(prop) {
       {(flag>=49)&&<table >
         
         <tr>
-          <th>{arr[16]}{arr[17]}</th>
+          <th style={{color:"orange"}}>{arr[16]}{arr[17]}</th>
         </tr>
         <tr>
-          <th>{arr[18]}{arr[19]}</th>
+          <th style={{color:"orange"}}>{arr[18]}{arr[19]}</th>
         </tr>
         <tr>
-          <th>{arr[20]}{arr[21]}</th>
+          <th style={{color:"orange"}}>{arr[20]}{arr[21]}</th>
         </tr>
         <tr>
-          <th>{arr[22]}{arr[23]}</th>
+          <th style={{color:"orange"}}>{arr[22]}{arr[23]}</th>
         </tr>     
         
       </table>}

@@ -48,7 +48,7 @@ function decimalToHex(d, padding) {
   return hex;
 }
 
-const kkey=  "12345678123456781234567812345678";
+// const key=  "78797656453219674536897634567834";
 function KeyExpansion(k) {
   const rcon = [0x8d, 0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80, 0x1b, 0x36,
     0x6c, 0xd8, 0xab, 0x4d, 0x9a, 0x2f, 0x5e, 0xbc, 0x63, 0xc6, 0x97,
@@ -114,7 +114,7 @@ function KeyExpansion(k) {
     return final1;
 }
 
-var totalkey = (KeyExpansion(kkey)).slice(0,32);
+var totalkey = (KeyExpansion(key)).slice(0,32);
 console.log(totalkey)
 
 
