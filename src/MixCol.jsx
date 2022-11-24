@@ -37,8 +37,8 @@ function MixCol() {
       </div>
       </div>
       <div  style={{float: "left", width: "10%",height:"10%",marginLeft:"77%",marginRight:"%",marginTop:"3%"}} >
-      <Link to={'/addroundkey'} style={{ textDecoration: 'none' }}>
-        <button  style={{backgroundColor: "#0000FF" ,width:"100%",height:"100%"}} className={'button-18'}   >AddRoundKey
+      <Link to={'/keyexpansion'} style={{ textDecoration: 'none' }}>
+        <button  style={{backgroundColor: "#0000FF" ,width:"100%",height:"100%"}} className={'button-18'}   >Key Expansion
         </button>
         </Link>
         </div>

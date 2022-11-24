@@ -1,10 +1,9 @@
 import * as React from 'react';
 import './App.css';
 import { useState, useEffect } from "react";
-// import Table11 from './Table11';
+import Table11 from './Table11';
 import Table15 from './Table15';
 // import Table10 from './Table10';
-import Table16 from './table16';
 import Table17 from './Table17';
 import Table18 from './Table18';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
@@ -31,7 +30,7 @@ function Finally(prop) {
   <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',marginTop:"2%"}}>
   
     <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',width: "28%",zIndex:"1"}} >
-      <Table16 name={prop.b}/>
+      <Table11 name={prop.b}/>
     </div>
     <div className={(flag<=0) ?'fadeOut':'fadeIn'} style={{float: "left",width:"3%",marginRight:"%",marginLeft:"1%",marginTop:"1%"}} >
       <AddCircleOutlineIcon sx={{fontSize:"60px"}}/>
