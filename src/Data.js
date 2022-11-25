@@ -2,10 +2,18 @@ import * as React from 'react';
 import { UserContext } from './UserContext';
 
 export default function Data() {
-   const {plaintext,key,arko,setarko,sb1,setsb1,mat,setmat,setfinal}=React.useContext(UserContext)
+   const {plaintext,key,setkey,arko,setarko,sb1,setsb1,mat,setmat,setfinal}=React.useContext(UserContext)
    console.log(plaintext)
    console.log(key)
+   var key1=['00','00','00','00','00','00','00','00','00','00','00','00','00','00','00','00','00','00']
+   for(var w=0;w<key.length/2;w++)
+   {
+      key1[w] = key.slice(2*w,2*w+2)
+   }
+   key1 = key1.join('')
+   setkey(key1)
 
+   
 
 // var arko = ''
 var arko1=''

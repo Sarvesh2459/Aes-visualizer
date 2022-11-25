@@ -16,15 +16,13 @@ function Table14(prop) {
         116,31,75,189,139,138,112,62,181,102,72,3,246,14,97,53,87,185,134,193,29,
         158,225,248,152,17,105,217,142,148,155,30,135,233,206,85,40,223,140,161,
         137,13,191,230,66,104,65,153,45,15,176,84,187,22];
-        console.log(Sbox[parseInt(((''+(parseInt(arr[2],16)))+(parseInt(arr[3],16))),16)])
-        console.log(parseInt((''+(parseInt(arr[2],16))+(parseInt(arr[3],16))),16));
-        console.log(Sbox[(''+(parseInt(arr[2],16))+(parseInt(arr[3],16)))])
-        console.log(typeof((''+(parseInt(arr[2],16))+(parseInt(arr[3],16)))))
-        console.log(typeof(parseInt((''+(parseInt(arr[2],16))+(parseInt(arr[3],16))),16)))
-        // console.log(Sbox[78])
-        // console.log(Sbox[90])
-        // console.log(Sbox[12])
-        // console.log(Sbox[78])
+        // console.log(Sbox[parseInt(((''+(parseInt(arr[0],16)))+(parseInt(arr[1],16))),16)])
+        // console.log(Sbox[parseInt(((''+(parseInt(arr[2],16)))+(parseInt(arr[3],16))),16)])
+        // console.log(Sbox[parseInt(((''+(parseInt(arr[4],16)))+(parseInt(arr[5],16))),16)])
+        // console.log(Sbox[parseInt(((''+(parseInt(arr[6],16)))+(parseInt(arr[7],16))),16)])
+        
+        // console.log(arr.length)
+     
   return (
     <> 
     
