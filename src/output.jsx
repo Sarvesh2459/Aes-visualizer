@@ -196,9 +196,12 @@ curr = curr.toUpperCase()
 console.log(curr);
     return(
         <>
-        <div style={{marginLeft:'11%',  justifyContent:'center', alignItems:'center'}}>
-        <h1  style={{color:"white",borderRadius:"16px",marginTop:"8%"}}>plaintext: {plaintext}</h1>
-        <h1  style={{color:"white",borderRadius:"16px",marginTop:"8%"}}>Encrypted text: {curr}</h1>
+        <div style={{marginLeft:'0%',  justifyContent:'center', alignItems:'center'}}>
+        <h1  style={{borderRadius:"16px",marginTop:"3%",textAlign:"center",color:"rgb(27, 191, 32)"}}>Plaintext </h1>
+        <h1  style={{color:"white",borderRadius:"16px",marginTop:"3%",textAlign:"center"}}>{plaintext}</h1>
+        
+        <h1  style={{color:"rgb(27, 191, 32)",borderRadius:"16px",marginTop:"5%",textAlign:"center"}}>Encrypted text</h1>
+        <h1  style={{color:"white",borderRadius:"16px",marginTop:"3%",textAlign:"center"}}>{curr}</h1>
       </div>
         </>
     );
