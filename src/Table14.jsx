@@ -1,8 +1,21 @@
 import './table.css';
 import * as React from 'react';
 
+
+function decimalToHex(d, padding) {
+  var hex = Number(d).toString(16);
+  padding = typeof (padding) === "undefined" || padding === null ? padding = 2 : padding;
+
+  while (hex.length < padding) {
+      hex = "0" + hex;
+  }
+
+  return hex;
+}
+
 function Table14(prop) {
     const arr=prop.name 
+    console.log(arr);
     var Sbox = [99,124,119,123,242,107,111,197,48,1,103,43,254,215,171,
         118,202,130,201,125,250,89,71,240,173,212,162,175,156,164,114,192,183,253,
         147,38,54,63,247,204,52,165,229,241,113,216,49,21,4,199,35,195,24,150,5,154,
@@ -16,29 +29,31 @@ function Table14(prop) {
         116,31,75,189,139,138,112,62,181,102,72,3,246,14,97,53,87,185,134,193,29,
         158,225,248,152,17,105,217,142,148,155,30,135,233,206,85,40,223,140,161,
         137,13,191,230,66,104,65,153,45,15,176,84,187,22];
-        // console.log(Sbox[parseInt(((''+(parseInt(arr[0],16)))+(parseInt(arr[1],16))),16)])
         // console.log(Sbox[parseInt(((''+(parseInt(arr[2],16)))+(parseInt(arr[3],16))),16)])
-        // console.log(Sbox[parseInt(((''+(parseInt(arr[4],16)))+(parseInt(arr[5],16))),16)])
-        // console.log(Sbox[parseInt(((''+(parseInt(arr[6],16)))+(parseInt(arr[7],16))),16)])
-        
-        // console.log(arr.length)
-     
+        // console.log(parseInt((''+(parseInt(arr[2],16))+(parseInt(arr[3],16))),16));
+        // console.log(Sbox[(''+(parseInt(arr[2],16))+(parseInt(arr[3],16)))])
+        // console.log(typeof((''+(parseInt(arr[2],16))+(parseInt(arr[3],16)))))
+        // console.log(typeof(parseInt((''+(parseInt(arr[2],16))+(parseInt(arr[3],16))),16)))
+        // console.log(Sbox[78])
+        // console.log(Sbox[90])
+        // console.log(Sbox[12])
+        // console.log(Sbox[78])
   return (
     <> 
     
          <table >
         
         <tr>
-          <th>{Sbox[parseInt(((''+(parseInt(arr[2],16)))+(parseInt(arr[3],16))),16)].toString(16)}</th>
+          <th>{decimalToHex(Sbox[parseInt(arr.slice(2,4),16)])}</th>
         </tr>
         <tr>
-          <th>{Sbox[parseInt(((''+(parseInt(arr[4],16)))+(parseInt(arr[5],16))),16)].toString(16)}</th>
+          <th>{decimalToHex(Sbox[parseInt(arr.slice(4,6),16)])}</th>
         </tr>
         <tr>
-          <th>{Sbox[parseInt(((''+(parseInt(arr[6],16)))+(parseInt(arr[7],16))),16)].toString(16)}</th>
+          <th>{decimalToHex(Sbox[parseInt(arr.slice(6,8),16)])}</th>
         </tr>
         <tr>
-          <th>{Sbox[parseInt(((''+(parseInt(arr[0],16)))+(parseInt(arr[1],16))),16)].toString(16)}</th>
+          <th>{decimalToHex(Sbox[parseInt(arr.slice(0,2),16)])}</th>
         </tr>   
         
       </table>
