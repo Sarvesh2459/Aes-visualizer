@@ -21,6 +21,7 @@ function MixCol() {
       </div>
       <div style={{marginTop:"4%"}}>
       <div  style={{float: "left", width: "26%",height:"26%",marginLeft:"3%",marginRight:"0%"}} >
+      
       <Table6  name={sb}/>
       </div>
       <div  style={{float: "left",width:"3%",marginRight:"3%",marginLeft:"1%",marginTop:"9%"}} >

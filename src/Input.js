@@ -42,6 +42,11 @@ import Dialog from './Dialog';
             <button className='button-18' style={{background:"#0000FF",width:"150%",height:"150%"}}>ENCRYPT TEXT</button>
             </Link>
         </div>
+        <div>
+            <h2 style={{float: "left", width: "7%",height:"8%",marginLeft:"22%",marginTop:"6%"}}>Sarvesh</h2>
+            <h2 style={{float: "left", width: "6%",height:"8%",marginLeft:"19%",marginTop:"6%"}}>Sakshi</h2>
+            <h2 style={{float: "left", width: "6%",height:"8%",marginLeft:"20%",marginRight:"20%",marginTop:"6%"}}>Garvit</h2>
+        </div>
     </div>
     )
     
