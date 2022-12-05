@@ -17,13 +17,13 @@ import Table from './Table';
 export default function Home() {
   const {plaintext,key}=React.useContext(UserContext)
   const [round1, setround1]=useState(1)  
-  const [round2, setround2]=useState(0)
+  // const [round2, setround2]=useState(0)
   var output=[];
   output.push(plaintext)
   useEffect(() => {
     const interval = setInterval(() => {
       setround1((prevround1) => prevround1 + 1);
-      setround2((prevround2) => prevround2 + 1);
+      // setround2((prevround2) => prevround2 + 1);
     }, 250);
 
     return () => clearInterval(interval,48000);
