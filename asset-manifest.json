@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "./static/css/main.f67dfde4.css",
+    "main.js": "./static/js/main.c8cc0b66.js",
+    "static/js/787.bf228e4b.chunk.js": "./static/js/787.bf228e4b.chunk.js",
+    "static/media/pills (1).jpg": "./static/media/pills (1).146e6c3a829634445ffc.jpg",
+    "index.html": "./index.html",
+    "main.f67dfde4.css.map": "./static/css/main.f67dfde4.css.map",
+    "main.c8cc0b66.js.map": "./static/js/main.c8cc0b66.js.map",
+    "787.bf228e4b.chunk.js.map": "./static/js/787.bf228e4b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f67dfde4.css",
+    "static/js/main.c8cc0b66.js"
+  ]
+}
